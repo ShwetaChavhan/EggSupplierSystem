@@ -1,0 +1,2026 @@
+12-Jun-2021 00:10:43.755 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [32] in the jsp file: [/custbill.jsp]
+hs cannot be resolved
+29:          Class.forName("org.postgresql.Driver");
+30:          Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");                                                                 
+31:          Statement st=con.createStatement();      
+32:          String S=(String)hs.getAttribute("user");
+33:          int oid=(int)hs.getAttribute("oid");
+34:          ResultSet rs;
+35:          rs=st.executeQuery("select otype from orders where oid="+oid);
+
+
+An error occurred at line: [33] in the jsp file: [/custbill.jsp]
+hs cannot be resolved
+30:          Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");                                                                 
+31:          Statement st=con.createStatement();      
+32:          String S=(String)hs.getAttribute("user");
+33:          int oid=(int)hs.getAttribute("oid");
+34:          ResultSet rs;
+35:          rs=st.executeQuery("select otype from orders where oid="+oid);
+36:          String type=null;
+
+
+An error occurred at line: [43] in the jsp file: [/custbill.jsp]
+hs cannot be resolved
+40:          rs=st.executeQuery("select rate from egg1 where type='"+type+"'");
+41:          if(rs.next())
+42:          rate=rs.getInt(1);
+43:          long pid=(long)hs.getAttribute("pid");
+44:          rs=st.executeQuery("select pamount,pdate,ptime,ptype from payment where pid="+pid);
+45:          float pamount=0;
+46:          String pdate=null,ptime=null,ptype=null;       
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [32] in the jsp file: [/custbill.jsp]
+hs cannot be resolved
+29:          Class.forName("org.postgresql.Driver");
+30:          Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");                                                                 
+31:          Statement st=con.createStatement();      
+32:          String S=(String)hs.getAttribute("user");
+33:          int oid=(int)hs.getAttribute("oid");
+34:          ResultSet rs;
+35:          rs=st.executeQuery("select otype from orders where oid="+oid);
+
+
+An error occurred at line: [33] in the jsp file: [/custbill.jsp]
+hs cannot be resolved
+30:          Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");                                                                 
+31:          Statement st=con.createStatement();      
+32:          String S=(String)hs.getAttribute("user");
+33:          int oid=(int)hs.getAttribute("oid");
+34:          ResultSet rs;
+35:          rs=st.executeQuery("select otype from orders where oid="+oid);
+36:          String type=null;
+
+
+An error occurred at line: [43] in the jsp file: [/custbill.jsp]
+hs cannot be resolved
+40:          rs=st.executeQuery("select rate from egg1 where type='"+type+"'");
+41:          if(rs.next())
+42:          rate=rs.getInt(1);
+43:          long pid=(long)hs.getAttribute("pid");
+44:          rs=st.executeQuery("select pamount,pdate,ptime,ptype from payment where pid="+pid);
+45:          float pamount=0;
+46:          String pdate=null,ptime=null,ptype=null;       
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+12-Jun-2021 09:24:29.578 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+12-Jun-2021 09:24:29.578 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+12-Jun-2021 09:24:29.585 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@35f3a22c')
+12-Jun-2021 10:14:02.843 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [57] in the jsp file: [/supplierlogin.jsp]
+The method setAttibute(String, String) is undefined for the type HttpSession
+54:              if(a.equals(rs.getString(1))&&b.equals(rs.getString(2)))
+55:                {
+56:                 HttpSession hs1=request.getSession(true);
+57:                 hs1.setAttibute("supplier",a);
+58:                 response.sendRedirect("supplierpage.jsp");
+59:                }
+60:            }
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [57] in the jsp file: [/supplierlogin.jsp]
+The method setAttibute(String, String) is undefined for the type HttpSession
+54:              if(a.equals(rs.getString(1))&&b.equals(rs.getString(2)))
+55:                {
+56:                 HttpSession hs1=request.getSession(true);
+57:                 hs1.setAttibute("supplier",a);
+58:                 response.sendRedirect("supplierpage.jsp");
+59:                }
+60:            }
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+12-Jun-2021 13:53:14.684 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [64] in the jsp file: [/supplieregg.jsp]
+Connection cannot be resolved to a type
+61:        <img src="Images/icon13.png" width="100" height="100" style="margin-left: 500px;">
+62:       <%
+63:       Class.forName("org.postgresql.Driver");
+64:       Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");
+65:        if(con==null)
+66:        out.print("Unable to connect :(");
+67:        else
+
+
+An error occurred at line: [64] in the jsp file: [/supplieregg.jsp]
+DriverManager cannot be resolved
+61:        <img src="Images/icon13.png" width="100" height="100" style="margin-left: 500px;">
+62:       <%
+63:       Class.forName("org.postgresql.Driver");
+64:       Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");
+65:        if(con==null)
+66:        out.print("Unable to connect :(");
+67:        else
+
+
+An error occurred at line: [69] in the jsp file: [/supplieregg.jsp]
+Statement cannot be resolved to a type
+66:        out.print("Unable to connect :(");
+67:        else
+68:        {
+69:        Statement st=con.createStatement();
+70:        ResultSet rs=st.executeQuery("select * from egg1");
+71:        out.print("<font face='arial' size='4' color='#eee6e2'>");
+72:        out.print("<table  cellspacing='0' style='margin: 0 auto;' width='600'>");
+
+
+An error occurred at line: [70] in the jsp file: [/supplieregg.jsp]
+ResultSet cannot be resolved to a type
+67:        else
+68:        {
+69:        Statement st=con.createStatement();
+70:        ResultSet rs=st.executeQuery("select * from egg1");
+71:        out.print("<font face='arial' size='4' color='#eee6e2'>");
+72:        out.print("<table  cellspacing='0' style='margin: 0 auto;' width='600'>");
+73:        out.print("<caption><b>Egg Information</b></caption>");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [64] in the jsp file: [/supplieregg.jsp]
+Connection cannot be resolved to a type
+61:        <img src="Images/icon13.png" width="100" height="100" style="margin-left: 500px;">
+62:       <%
+63:       Class.forName("org.postgresql.Driver");
+64:       Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");
+65:        if(con==null)
+66:        out.print("Unable to connect :(");
+67:        else
+
+
+An error occurred at line: [64] in the jsp file: [/supplieregg.jsp]
+DriverManager cannot be resolved
+61:        <img src="Images/icon13.png" width="100" height="100" style="margin-left: 500px;">
+62:       <%
+63:       Class.forName("org.postgresql.Driver");
+64:       Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");
+65:        if(con==null)
+66:        out.print("Unable to connect :(");
+67:        else
+
+
+An error occurred at line: [69] in the jsp file: [/supplieregg.jsp]
+Statement cannot be resolved to a type
+66:        out.print("Unable to connect :(");
+67:        else
+68:        {
+69:        Statement st=con.createStatement();
+70:        ResultSet rs=st.executeQuery("select * from egg1");
+71:        out.print("<font face='arial' size='4' color='#eee6e2'>");
+72:        out.print("<table  cellspacing='0' style='margin: 0 auto;' width='600'>");
+
+
+An error occurred at line: [70] in the jsp file: [/supplieregg.jsp]
+ResultSet cannot be resolved to a type
+67:        else
+68:        {
+69:        Statement st=con.createStatement();
+70:        ResultSet rs=st.executeQuery("select * from egg1");
+71:        out.print("<font face='arial' size='4' color='#eee6e2'>");
+72:        out.print("<table  cellspacing='0' style='margin: 0 auto;' width='600'>");
+73:        out.print("<caption><b>Egg Information</b></caption>");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+12-Jun-2021 13:58:04.828 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [77] in the jsp file: [/supplieregg.jsp]
+Syntax error on tokens, delete these tokens
+74:        out.print("<tr bgcolor='#f6a00b'><th class='border'>Type</th> <th>Photo</th><th>Rate</th><th>Quantity Available</th></tr>");
+75:         if(rs.next())
+76:           {             
+77:             out.print("<tr align='center'><td class='border'>"+rs.getString(1)+" eggs<td class="border"><img src="Images/icon13.png" width="60" height="60"><td class='border'>₹"+rs.getFloat(2)+"/egg<td class='border'>"+rs.getInt(3)+"</tr>");
+78:          }
+79:         if(rs.next())
+80:           {             
+
+
+An error occurred at line: [77] in the jsp file: [/supplieregg.jsp]
+icon13.png cannot be resolved to a type
+74:        out.print("<tr bgcolor='#f6a00b'><th class='border'>Type</th> <th>Photo</th><th>Rate</th><th>Quantity Available</th></tr>");
+75:         if(rs.next())
+76:           {             
+77:             out.print("<tr align='center'><td class='border'>"+rs.getString(1)+" eggs<td class="border"><img src="Images/icon13.png" width="60" height="60"><td class='border'>₹"+rs.getFloat(2)+"/egg<td class='border'>"+rs.getInt(3)+"</tr>");
+78:          }
+79:         if(rs.next())
+80:           {             
+
+
+An error occurred at line: [77] in the jsp file: [/supplieregg.jsp]
+Syntax error on tokens, delete these tokens
+74:        out.print("<tr bgcolor='#f6a00b'><th class='border'>Type</th> <th>Photo</th><th>Rate</th><th>Quantity Available</th></tr>");
+75:         if(rs.next())
+76:           {             
+77:             out.print("<tr align='center'><td class='border'>"+rs.getString(1)+" eggs<td class="border"><img src="Images/icon13.png" width="60" height="60"><td class='border'>₹"+rs.getFloat(2)+"/egg<td class='border'>"+rs.getInt(3)+"</tr>");
+78:          }
+79:         if(rs.next())
+80:           {             
+
+
+An error occurred at line: [81] in the jsp file: [/supplieregg.jsp]
+Syntax error on tokens, delete these tokens
+78:          }
+79:         if(rs.next())
+80:           {             
+81:             out.print("<tr align='center'><td class='border'>"+rs.getString(1)+" eggs<td class="border"><img src="Images/icon3.png" width="60" height="60"><td class='border'>₹"+rs.getFloat(2)+"/egg<td class='border'>"+rs.getInt(3)+"</tr>");
+82:          }
+83:             out.print("</table>");                
+84:        }
+
+
+An error occurred at line: [81] in the jsp file: [/supplieregg.jsp]
+icon3.png cannot be resolved to a type
+78:          }
+79:         if(rs.next())
+80:           {             
+81:             out.print("<tr align='center'><td class='border'>"+rs.getString(1)+" eggs<td class="border"><img src="Images/icon3.png" width="60" height="60"><td class='border'>₹"+rs.getFloat(2)+"/egg<td class='border'>"+rs.getInt(3)+"</tr>");
+82:          }
+83:             out.print("</table>");                
+84:        }
+
+
+An error occurred at line: [81] in the jsp file: [/supplieregg.jsp]
+Syntax error on tokens, delete these tokens
+78:          }
+79:         if(rs.next())
+80:           {             
+81:             out.print("<tr align='center'><td class='border'>"+rs.getString(1)+" eggs<td class="border"><img src="Images/icon3.png" width="60" height="60"><td class='border'>₹"+rs.getFloat(2)+"/egg<td class='border'>"+rs.getInt(3)+"</tr>");
+82:          }
+83:             out.print("</table>");                
+84:        }
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [77] in the jsp file: [/supplieregg.jsp]
+Syntax error on tokens, delete these tokens
+74:        out.print("<tr bgcolor='#f6a00b'><th class='border'>Type</th> <th>Photo</th><th>Rate</th><th>Quantity Available</th></tr>");
+75:         if(rs.next())
+76:           {             
+77:             out.print("<tr align='center'><td class='border'>"+rs.getString(1)+" eggs<td class="border"><img src="Images/icon13.png" width="60" height="60"><td class='border'>₹"+rs.getFloat(2)+"/egg<td class='border'>"+rs.getInt(3)+"</tr>");
+78:          }
+79:         if(rs.next())
+80:           {             
+
+
+An error occurred at line: [77] in the jsp file: [/supplieregg.jsp]
+icon13.png cannot be resolved to a type
+74:        out.print("<tr bgcolor='#f6a00b'><th class='border'>Type</th> <th>Photo</th><th>Rate</th><th>Quantity Available</th></tr>");
+75:         if(rs.next())
+76:           {             
+77:             out.print("<tr align='center'><td class='border'>"+rs.getString(1)+" eggs<td class="border"><img src="Images/icon13.png" width="60" height="60"><td class='border'>₹"+rs.getFloat(2)+"/egg<td class='border'>"+rs.getInt(3)+"</tr>");
+78:          }
+79:         if(rs.next())
+80:           {             
+
+
+An error occurred at line: [77] in the jsp file: [/supplieregg.jsp]
+Syntax error on tokens, delete these tokens
+74:        out.print("<tr bgcolor='#f6a00b'><th class='border'>Type</th> <th>Photo</th><th>Rate</th><th>Quantity Available</th></tr>");
+75:         if(rs.next())
+76:           {             
+77:             out.print("<tr align='center'><td class='border'>"+rs.getString(1)+" eggs<td class="border"><img src="Images/icon13.png" width="60" height="60"><td class='border'>₹"+rs.getFloat(2)+"/egg<td class='border'>"+rs.getInt(3)+"</tr>");
+78:          }
+79:         if(rs.next())
+80:           {             
+
+
+An error occurred at line: [81] in the jsp file: [/supplieregg.jsp]
+Syntax error on tokens, delete these tokens
+78:          }
+79:         if(rs.next())
+80:           {             
+81:             out.print("<tr align='center'><td class='border'>"+rs.getString(1)+" eggs<td class="border"><img src="Images/icon3.png" width="60" height="60"><td class='border'>₹"+rs.getFloat(2)+"/egg<td class='border'>"+rs.getInt(3)+"</tr>");
+82:          }
+83:             out.print("</table>");                
+84:        }
+
+
+An error occurred at line: [81] in the jsp file: [/supplieregg.jsp]
+icon3.png cannot be resolved to a type
+78:          }
+79:         if(rs.next())
+80:           {             
+81:             out.print("<tr align='center'><td class='border'>"+rs.getString(1)+" eggs<td class="border"><img src="Images/icon3.png" width="60" height="60"><td class='border'>₹"+rs.getFloat(2)+"/egg<td class='border'>"+rs.getInt(3)+"</tr>");
+82:          }
+83:             out.print("</table>");                
+84:        }
+
+
+An error occurred at line: [81] in the jsp file: [/supplieregg.jsp]
+Syntax error on tokens, delete these tokens
+78:          }
+79:         if(rs.next())
+80:           {             
+81:             out.print("<tr align='center'><td class='border'>"+rs.getString(1)+" eggs<td class="border"><img src="Images/icon3.png" width="60" height="60"><td class='border'>₹"+rs.getFloat(2)+"/egg<td class='border'>"+rs.getInt(3)+"</tr>");
+82:          }
+83:             out.print("</table>");                
+84:        }
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+12-Jun-2021 13:59:02.718 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [77] in the jsp file: [/supplieregg.jsp]
+The operator * is undefined for the argument type(s) java.lang.String, java.lang.String
+74:        out.print("<tr bgcolor='#f6a00b'><th class='border'>Type</th> <th>Photo</th><th>Rate</th><th>Quantity Available</th></tr>");
+75:         if(rs.next())
+76:           {             
+77:             out.print("<tr align='center'><td class='border'>"+rs.getString(1)+" eggs<td class="border"><img src='Images/icon13.png' width='60' height='60'><td class='border'>₹"+rs.getFloat(2)+"/egg<td class='border'>"+rs.getInt(3)+"</tr>");
+78:          }
+79:         if(rs.next())
+80:           {             
+
+
+An error occurred at line: [77] in the jsp file: [/supplieregg.jsp]
+Syntax error on token "border", * expected
+74:        out.print("<tr bgcolor='#f6a00b'><th class='border'>Type</th> <th>Photo</th><th>Rate</th><th>Quantity Available</th></tr>");
+75:         if(rs.next())
+76:           {             
+77:             out.print("<tr align='center'><td class='border'>"+rs.getString(1)+" eggs<td class="border"><img src='Images/icon13.png' width='60' height='60'><td class='border'>₹"+rs.getFloat(2)+"/egg<td class='border'>"+rs.getInt(3)+"</tr>");
+78:          }
+79:         if(rs.next())
+80:           {             
+
+
+An error occurred at line: [81] in the jsp file: [/supplieregg.jsp]
+The operator * is undefined for the argument type(s) java.lang.String, java.lang.String
+78:          }
+79:         if(rs.next())
+80:           {             
+81:             out.print("<tr align='center'><td class='border'>"+rs.getString(1)+" eggs<td class="border"><img src='Images/icon3.png' width='60' height='60'><td class='border'>₹"+rs.getFloat(2)+"/egg<td class='border'>"+rs.getInt(3)+"</tr>");
+82:          }
+83:             out.print("</table>");                
+84:        }
+
+
+An error occurred at line: [81] in the jsp file: [/supplieregg.jsp]
+Syntax error on token "border", * expected
+78:          }
+79:         if(rs.next())
+80:           {             
+81:             out.print("<tr align='center'><td class='border'>"+rs.getString(1)+" eggs<td class="border"><img src='Images/icon3.png' width='60' height='60'><td class='border'>₹"+rs.getFloat(2)+"/egg<td class='border'>"+rs.getInt(3)+"</tr>");
+82:          }
+83:             out.print("</table>");                
+84:        }
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [77] in the jsp file: [/supplieregg.jsp]
+The operator * is undefined for the argument type(s) java.lang.String, java.lang.String
+74:        out.print("<tr bgcolor='#f6a00b'><th class='border'>Type</th> <th>Photo</th><th>Rate</th><th>Quantity Available</th></tr>");
+75:         if(rs.next())
+76:           {             
+77:             out.print("<tr align='center'><td class='border'>"+rs.getString(1)+" eggs<td class="border"><img src='Images/icon13.png' width='60' height='60'><td class='border'>₹"+rs.getFloat(2)+"/egg<td class='border'>"+rs.getInt(3)+"</tr>");
+78:          }
+79:         if(rs.next())
+80:           {             
+
+
+An error occurred at line: [77] in the jsp file: [/supplieregg.jsp]
+Syntax error on token "border", * expected
+74:        out.print("<tr bgcolor='#f6a00b'><th class='border'>Type</th> <th>Photo</th><th>Rate</th><th>Quantity Available</th></tr>");
+75:         if(rs.next())
+76:           {             
+77:             out.print("<tr align='center'><td class='border'>"+rs.getString(1)+" eggs<td class="border"><img src='Images/icon13.png' width='60' height='60'><td class='border'>₹"+rs.getFloat(2)+"/egg<td class='border'>"+rs.getInt(3)+"</tr>");
+78:          }
+79:         if(rs.next())
+80:           {             
+
+
+An error occurred at line: [81] in the jsp file: [/supplieregg.jsp]
+The operator * is undefined for the argument type(s) java.lang.String, java.lang.String
+78:          }
+79:         if(rs.next())
+80:           {             
+81:             out.print("<tr align='center'><td class='border'>"+rs.getString(1)+" eggs<td class="border"><img src='Images/icon3.png' width='60' height='60'><td class='border'>₹"+rs.getFloat(2)+"/egg<td class='border'>"+rs.getInt(3)+"</tr>");
+82:          }
+83:             out.print("</table>");                
+84:        }
+
+
+An error occurred at line: [81] in the jsp file: [/supplieregg.jsp]
+Syntax error on token "border", * expected
+78:          }
+79:         if(rs.next())
+80:           {             
+81:             out.print("<tr align='center'><td class='border'>"+rs.getString(1)+" eggs<td class="border"><img src='Images/icon3.png' width='60' height='60'><td class='border'>₹"+rs.getFloat(2)+"/egg<td class='border'>"+rs.getInt(3)+"</tr>");
+82:          }
+83:             out.print("</table>");                
+84:        }
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+12-Jun-2021 15:16:09.724 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [An exception occurred processing [/adminorder.jsp] at line [68]
+
+65:             out.print("<td>"+rs.getInt(8));
+66:             out.print("<td>"+rs.getString(9));
+67:             out.print("<td>"+rs.getString(10));
+68:             if(rs.getString(10).equals("incomplete"))
+69:              {
+70:                 out.print("<td><form action='assignsupplier.jsp'><input type='submit' value='Assign Now'></form>");
+71:              }
+
+
+Stacktrace:] with root cause
+	java.lang.NullPointerException
+		at org.apache.jsp.adminorder_jsp._jspService(adminorder_jsp.java:186)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+12-Jun-2021 15:18:19.380 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [An exception occurred processing [/adminorder.jsp] at line [69]
+
+66:             out.print("<td>"+rs.getString(9));
+67:             String status=rs.getString(10);
+68:             out.print("<td>"+status);
+69:             if(status.equals("incomplete"))
+70:              {
+71:                 out.print("<td><form action='assignsupplier.jsp'><input type='submit' value='Assign Now'></form>");
+72:              }
+
+
+Stacktrace:] with root cause
+	java.lang.NullPointerException
+		at org.apache.jsp.adminorder_jsp._jspService(adminorder_jsp.java:187)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+12-Jun-2021 17:27:52.137 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [71] in the jsp file: [/adminorder.jsp]
+hs cannot be resolved
+68:             out.print("<td>"+status);
+69:             if(status.equals("incomplete"))
+70:              {
+71:                 hs.setAttribute("soid",rs.getInt(1));
+72:                 out.print("<td><form action='assignsupplier.jsp'><input type='submit' value='Assign Now'></form>");
+73:             }
+74:             out.print("</tr>");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [71] in the jsp file: [/adminorder.jsp]
+hs cannot be resolved
+68:             out.print("<td>"+status);
+69:             if(status.equals("incomplete"))
+70:              {
+71:                 hs.setAttribute("soid",rs.getInt(1));
+72:                 out.print("<td><form action='assignsupplier.jsp'><input type='submit' value='Assign Now'></form>");
+73:             }
+74:             out.print("</tr>");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+12-Jun-2021 17:33:57.649 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [71] in the jsp file: [/adminorder.jsp]
+The operator + is undefined for the argument type(s) String, void
+68:             out.print("<td>"+status);
+69:             if(status.equals("incomplete"))
+70:              {
+71:                 out.print("<td><form action='assignsupplier.jsp'><input type='submit' value='Assign Now' onclick='"+request.getSession(true).setAttribute("soid",rs.getInt(1))+"'></form>");
+72:             }
+73:             out.print("</tr>");
+74:        }
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [71] in the jsp file: [/adminorder.jsp]
+The operator + is undefined for the argument type(s) String, void
+68:             out.print("<td>"+status);
+69:             if(status.equals("incomplete"))
+70:              {
+71:                 out.print("<td><form action='assignsupplier.jsp'><input type='submit' value='Assign Now' onclick='"+request.getSession(true).setAttribute("soid",rs.getInt(1))+"'></form>");
+72:             }
+73:             out.print("</tr>");
+74:        }
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+12-Jun-2021 18:01:12.931 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [28] in the jsp file: [/adminorder.jsp]
+Invalid character constant
+25:          <script> 
+26:           function assign()
+27:           {
+28:                 document.write('<%HttpSession hs=request.getSession(true); hs.setAttribute("soid",rs.getInt(1)); response.sendRedirect("assignsupplier.jsp");');
+29:             }
+30:          </script>
+31:      </head>
+
+
+An error occurred at line: [38] in the jsp file: [/adminorder.jsp]
+Invalid character constant
+35:        <img src="Images/icon11.png" width="55" height="55"></img>
+36:        <color>Yashshree Egg Suppliers</color> &nbsp; &nbsp; &nbsp;   
+37:        <li class="active"><a href="index.jsp">Home</a></li>
+38:        <li align='right'><a href="#">Suppliers</a></li>
+39:         <li ><a href="customers.jsp">Customer</a></li>
+40:        <li><a href="adminegg.jsp">Eggs</a></li>
+41:         <li><a href="adminorder.jsp">Orders</a></li>
+
+
+An error occurred at line: [220] in the generated java file: [/home/shweta/apache-tomcat-9.0.43/work/Catalina/localhost/EggSupplier/org/apache/jsp/adminorder_jsp.java]
+Syntax error on token "catch", Identifier expected
+
+An error occurred at line: [222] in the generated java file: [/home/shweta/apache-tomcat-9.0.43/work/Catalina/localhost/EggSupplier/org/apache/jsp/adminorder_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [222] in the generated java file: [/home/shweta/apache-tomcat-9.0.43/work/Catalina/localhost/EggSupplier/org/apache/jsp/adminorder_jsp.java]
+_jspx_out cannot be resolved to a variable
+
+An error occurred at line: [223] in the generated java file: [/home/shweta/apache-tomcat-9.0.43/work/Catalina/localhost/EggSupplier/org/apache/jsp/adminorder_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [223] in the generated java file: [/home/shweta/apache-tomcat-9.0.43/work/Catalina/localhost/EggSupplier/org/apache/jsp/adminorder_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [225] in the generated java file: [/home/shweta/apache-tomcat-9.0.43/work/Catalina/localhost/EggSupplier/org/apache/jsp/adminorder_jsp.java]
+response cannot be resolved
+
+An error occurred at line: [226] in the generated java file: [/home/shweta/apache-tomcat-9.0.43/work/Catalina/localhost/EggSupplier/org/apache/jsp/adminorder_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [228] in the generated java file: [/home/shweta/apache-tomcat-9.0.43/work/Catalina/localhost/EggSupplier/org/apache/jsp/adminorder_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [231] in the generated java file: [/home/shweta/apache-tomcat-9.0.43/work/Catalina/localhost/EggSupplier/org/apache/jsp/adminorder_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+An error occurred at line: [231] in the generated java file: [/home/shweta/apache-tomcat-9.0.43/work/Catalina/localhost/EggSupplier/org/apache/jsp/adminorder_jsp.java]
+_jspx_page_context cannot be resolved
+
+An error occurred at line: [234] in the generated java file: [/home/shweta/apache-tomcat-9.0.43/work/Catalina/localhost/EggSupplier/org/apache/jsp/adminorder_jsp.java]
+Syntax error on token "finally", { expected
+
+An error occurred at line: [235] in the generated java file: [/home/shweta/apache-tomcat-9.0.43/work/Catalina/localhost/EggSupplier/org/apache/jsp/adminorder_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [28] in the jsp file: [/adminorder.jsp]
+Invalid character constant
+25:          <script> 
+26:           function assign()
+27:           {
+28:                 document.write('<%HttpSession hs=request.getSession(true); hs.setAttribute("soid",rs.getInt(1)); response.sendRedirect("assignsupplier.jsp");');
+29:             }
+30:          </script>
+31:      </head>
+
+
+An error occurred at line: [38] in the jsp file: [/adminorder.jsp]
+Invalid character constant
+35:        <img src="Images/icon11.png" width="55" height="55"></img>
+36:        <color>Yashshree Egg Suppliers</color> &nbsp; &nbsp; &nbsp;   
+37:        <li class="active"><a href="index.jsp">Home</a></li>
+38:        <li align='right'><a href="#">Suppliers</a></li>
+39:         <li ><a href="customers.jsp">Customer</a></li>
+40:        <li><a href="adminegg.jsp">Eggs</a></li>
+41:         <li><a href="adminorder.jsp">Orders</a></li>
+
+
+An error occurred at line: [220] in the generated java file: [/home/shweta/apache-tomcat-9.0.43/work/Catalina/localhost/EggSupplier/org/apache/jsp/adminorder_jsp.java]
+Syntax error on token "catch", Identifier expected
+
+An error occurred at line: [222] in the generated java file: [/home/shweta/apache-tomcat-9.0.43/work/Catalina/localhost/EggSupplier/org/apache/jsp/adminorder_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [222] in the generated java file: [/home/shweta/apache-tomcat-9.0.43/work/Catalina/localhost/EggSupplier/org/apache/jsp/adminorder_jsp.java]
+_jspx_out cannot be resolved to a variable
+
+An error occurred at line: [223] in the generated java file: [/home/shweta/apache-tomcat-9.0.43/work/Catalina/localhost/EggSupplier/org/apache/jsp/adminorder_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [223] in the generated java file: [/home/shweta/apache-tomcat-9.0.43/work/Catalina/localhost/EggSupplier/org/apache/jsp/adminorder_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [225] in the generated java file: [/home/shweta/apache-tomcat-9.0.43/work/Catalina/localhost/EggSupplier/org/apache/jsp/adminorder_jsp.java]
+response cannot be resolved
+
+An error occurred at line: [226] in the generated java file: [/home/shweta/apache-tomcat-9.0.43/work/Catalina/localhost/EggSupplier/org/apache/jsp/adminorder_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [228] in the generated java file: [/home/shweta/apache-tomcat-9.0.43/work/Catalina/localhost/EggSupplier/org/apache/jsp/adminorder_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [231] in the generated java file: [/home/shweta/apache-tomcat-9.0.43/work/Catalina/localhost/EggSupplier/org/apache/jsp/adminorder_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+An error occurred at line: [231] in the generated java file: [/home/shweta/apache-tomcat-9.0.43/work/Catalina/localhost/EggSupplier/org/apache/jsp/adminorder_jsp.java]
+_jspx_page_context cannot be resolved
+
+An error occurred at line: [234] in the generated java file: [/home/shweta/apache-tomcat-9.0.43/work/Catalina/localhost/EggSupplier/org/apache/jsp/adminorder_jsp.java]
+Syntax error on token "finally", { expected
+
+An error occurred at line: [235] in the generated java file: [/home/shweta/apache-tomcat-9.0.43/work/Catalina/localhost/EggSupplier/org/apache/jsp/adminorder_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+12-Jun-2021 18:01:29.015 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [28] in the jsp file: [/adminorder.jsp]
+rs cannot be resolved
+25:          <script> 
+26:           function assign()
+27:           {
+28:                 document.write('<%HttpSession hs=request.getSession(true); hs.setAttribute("soid",rs.getInt(1)); response.sendRedirect("assignsupplier.jsp"); %>');
+29:             }
+30:          </script>
+31:      </head>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [28] in the jsp file: [/adminorder.jsp]
+rs cannot be resolved
+25:          <script> 
+26:           function assign()
+27:           {
+28:                 document.write('<%HttpSession hs=request.getSession(true); hs.setAttribute("soid",rs.getInt(1)); response.sendRedirect("assignsupplier.jsp"); %>');
+29:             }
+30:          </script>
+31:      </head>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+12-Jun-2021 18:39:26.497 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [51] in the jsp file: [/adminorder.jsp]
+rs cannot be resolved to a variable
+48:        Class.forName("org.postgresql.Driver");
+49:        Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");
+50:        Statement st=con.createStatement();
+51:        rs=st.executeQuery("select * from orders");      
+52:        out.print("<table cellspacing='0' width='1000' >");
+53:        out.print("<caption><b>Order Information</b></caption>");
+54:        out.print("<tr bgcolor='#f6a00b' align='center'><th>Id</th><th>Date</th><th>Time</th><th>Type</th><th>Quantity</th><th>Delivery Date</th><th>cno</th><th>aid</th><th>Payment Status</th><th>Status</th><th></th></tr>");
+
+
+An error occurred at line: [55] in the jsp file: [/adminorder.jsp]
+rs cannot be resolved
+52:        out.print("<table cellspacing='0' width='1000' >");
+53:        out.print("<caption><b>Order Information</b></caption>");
+54:        out.print("<tr bgcolor='#f6a00b' align='center'><th>Id</th><th>Date</th><th>Time</th><th>Type</th><th>Quantity</th><th>Delivery Date</th><th>cno</th><th>aid</th><th>Payment Status</th><th>Status</th><th></th></tr>");
+55:         while(rs.next())
+56:           {
+57:             out.print("<tr align='center'>");
+58:             out.print("<td>"+rs.getInt(1));
+
+
+An error occurred at line: [58] in the jsp file: [/adminorder.jsp]
+rs cannot be resolved
+55:         while(rs.next())
+56:           {
+57:             out.print("<tr align='center'>");
+58:             out.print("<td>"+rs.getInt(1));
+59:             out.print("<td>"+rs.getString(2));
+60:            out.print("<td>"+rs.getString(3));
+61:             out.print("<td>"+rs.getString(4));
+
+
+An error occurred at line: [59] in the jsp file: [/adminorder.jsp]
+rs cannot be resolved
+56:           {
+57:             out.print("<tr align='center'>");
+58:             out.print("<td>"+rs.getInt(1));
+59:             out.print("<td>"+rs.getString(2));
+60:            out.print("<td>"+rs.getString(3));
+61:             out.print("<td>"+rs.getString(4));
+62:             out.print("<td>"+rs.getInt(5));
+
+
+An error occurred at line: [60] in the jsp file: [/adminorder.jsp]
+rs cannot be resolved
+57:             out.print("<tr align='center'>");
+58:             out.print("<td>"+rs.getInt(1));
+59:             out.print("<td>"+rs.getString(2));
+60:            out.print("<td>"+rs.getString(3));
+61:             out.print("<td>"+rs.getString(4));
+62:             out.print("<td>"+rs.getInt(5));
+63:             out.print("<td>"+rs.getString(6));
+
+
+An error occurred at line: [61] in the jsp file: [/adminorder.jsp]
+rs cannot be resolved
+58:             out.print("<td>"+rs.getInt(1));
+59:             out.print("<td>"+rs.getString(2));
+60:            out.print("<td>"+rs.getString(3));
+61:             out.print("<td>"+rs.getString(4));
+62:             out.print("<td>"+rs.getInt(5));
+63:             out.print("<td>"+rs.getString(6));
+64:             out.print("<td>"+rs.getInt(7));
+
+
+An error occurred at line: [62] in the jsp file: [/adminorder.jsp]
+rs cannot be resolved
+59:             out.print("<td>"+rs.getString(2));
+60:            out.print("<td>"+rs.getString(3));
+61:             out.print("<td>"+rs.getString(4));
+62:             out.print("<td>"+rs.getInt(5));
+63:             out.print("<td>"+rs.getString(6));
+64:             out.print("<td>"+rs.getInt(7));
+65:             out.print("<td>"+rs.getInt(8));
+
+
+An error occurred at line: [63] in the jsp file: [/adminorder.jsp]
+rs cannot be resolved
+60:            out.print("<td>"+rs.getString(3));
+61:             out.print("<td>"+rs.getString(4));
+62:             out.print("<td>"+rs.getInt(5));
+63:             out.print("<td>"+rs.getString(6));
+64:             out.print("<td>"+rs.getInt(7));
+65:             out.print("<td>"+rs.getInt(8));
+66:             out.print("<td>"+rs.getString(9));
+
+
+An error occurred at line: [64] in the jsp file: [/adminorder.jsp]
+rs cannot be resolved
+61:             out.print("<td>"+rs.getString(4));
+62:             out.print("<td>"+rs.getInt(5));
+63:             out.print("<td>"+rs.getString(6));
+64:             out.print("<td>"+rs.getInt(7));
+65:             out.print("<td>"+rs.getInt(8));
+66:             out.print("<td>"+rs.getString(9));
+67:             String status=rs.getString(10);
+
+
+An error occurred at line: [65] in the jsp file: [/adminorder.jsp]
+rs cannot be resolved
+62:             out.print("<td>"+rs.getInt(5));
+63:             out.print("<td>"+rs.getString(6));
+64:             out.print("<td>"+rs.getInt(7));
+65:             out.print("<td>"+rs.getInt(8));
+66:             out.print("<td>"+rs.getString(9));
+67:             String status=rs.getString(10);
+68:             out.print("<td>"+status);
+
+
+An error occurred at line: [66] in the jsp file: [/adminorder.jsp]
+rs cannot be resolved
+63:             out.print("<td>"+rs.getString(6));
+64:             out.print("<td>"+rs.getInt(7));
+65:             out.print("<td>"+rs.getInt(8));
+66:             out.print("<td>"+rs.getString(9));
+67:             String status=rs.getString(10);
+68:             out.print("<td>"+status);
+69:             if(status.equals("incomplete"))
+
+
+An error occurred at line: [67] in the jsp file: [/adminorder.jsp]
+rs cannot be resolved
+64:             out.print("<td>"+rs.getInt(7));
+65:             out.print("<td>"+rs.getInt(8));
+66:             out.print("<td>"+rs.getString(9));
+67:             String status=rs.getString(10);
+68:             out.print("<td>"+status);
+69:             if(status.equals("incomplete"))
+70:              {                          
+
+
+An error occurred at line: [71] in the jsp file: [/adminorder.jsp]
+rs cannot be resolved
+68:             out.print("<td>"+status);
+69:             if(status.equals("incomplete"))
+70:              {                          
+71:                 out.print("<td><form method='get' action='assignsupplier.jsp'><input type='hidden' name='t1' value='"+rs.getInt(1)+"'><input type='submit' value='Assign Now'>");
+72:              }
+73:             out.print("</tr>");
+74:        }
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [51] in the jsp file: [/adminorder.jsp]
+rs cannot be resolved to a variable
+48:        Class.forName("org.postgresql.Driver");
+49:        Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");
+50:        Statement st=con.createStatement();
+51:        rs=st.executeQuery("select * from orders");      
+52:        out.print("<table cellspacing='0' width='1000' >");
+53:        out.print("<caption><b>Order Information</b></caption>");
+54:        out.print("<tr bgcolor='#f6a00b' align='center'><th>Id</th><th>Date</th><th>Time</th><th>Type</th><th>Quantity</th><th>Delivery Date</th><th>cno</th><th>aid</th><th>Payment Status</th><th>Status</th><th></th></tr>");
+
+
+An error occurred at line: [55] in the jsp file: [/adminorder.jsp]
+rs cannot be resolved
+52:        out.print("<table cellspacing='0' width='1000' >");
+53:        out.print("<caption><b>Order Information</b></caption>");
+54:        out.print("<tr bgcolor='#f6a00b' align='center'><th>Id</th><th>Date</th><th>Time</th><th>Type</th><th>Quantity</th><th>Delivery Date</th><th>cno</th><th>aid</th><th>Payment Status</th><th>Status</th><th></th></tr>");
+55:         while(rs.next())
+56:           {
+57:             out.print("<tr align='center'>");
+58:             out.print("<td>"+rs.getInt(1));
+
+
+An error occurred at line: [58] in the jsp file: [/adminorder.jsp]
+rs cannot be resolved
+55:         while(rs.next())
+56:           {
+57:             out.print("<tr align='center'>");
+58:             out.print("<td>"+rs.getInt(1));
+59:             out.print("<td>"+rs.getString(2));
+60:            out.print("<td>"+rs.getString(3));
+61:             out.print("<td>"+rs.getString(4));
+
+
+An error occurred at line: [59] in the jsp file: [/adminorder.jsp]
+rs cannot be resolved
+56:           {
+57:             out.print("<tr align='center'>");
+58:             out.print("<td>"+rs.getInt(1));
+59:             out.print("<td>"+rs.getString(2));
+60:            out.print("<td>"+rs.getString(3));
+61:             out.print("<td>"+rs.getString(4));
+62:             out.print("<td>"+rs.getInt(5));
+
+
+An error occurred at line: [60] in the jsp file: [/adminorder.jsp]
+rs cannot be resolved
+57:             out.print("<tr align='center'>");
+58:             out.print("<td>"+rs.getInt(1));
+59:             out.print("<td>"+rs.getString(2));
+60:            out.print("<td>"+rs.getString(3));
+61:             out.print("<td>"+rs.getString(4));
+62:             out.print("<td>"+rs.getInt(5));
+63:             out.print("<td>"+rs.getString(6));
+
+
+An error occurred at line: [61] in the jsp file: [/adminorder.jsp]
+rs cannot be resolved
+58:             out.print("<td>"+rs.getInt(1));
+59:             out.print("<td>"+rs.getString(2));
+60:            out.print("<td>"+rs.getString(3));
+61:             out.print("<td>"+rs.getString(4));
+62:             out.print("<td>"+rs.getInt(5));
+63:             out.print("<td>"+rs.getString(6));
+64:             out.print("<td>"+rs.getInt(7));
+
+
+An error occurred at line: [62] in the jsp file: [/adminorder.jsp]
+rs cannot be resolved
+59:             out.print("<td>"+rs.getString(2));
+60:            out.print("<td>"+rs.getString(3));
+61:             out.print("<td>"+rs.getString(4));
+62:             out.print("<td>"+rs.getInt(5));
+63:             out.print("<td>"+rs.getString(6));
+64:             out.print("<td>"+rs.getInt(7));
+65:             out.print("<td>"+rs.getInt(8));
+
+
+An error occurred at line: [63] in the jsp file: [/adminorder.jsp]
+rs cannot be resolved
+60:            out.print("<td>"+rs.getString(3));
+61:             out.print("<td>"+rs.getString(4));
+62:             out.print("<td>"+rs.getInt(5));
+63:             out.print("<td>"+rs.getString(6));
+64:             out.print("<td>"+rs.getInt(7));
+65:             out.print("<td>"+rs.getInt(8));
+66:             out.print("<td>"+rs.getString(9));
+
+
+An error occurred at line: [64] in the jsp file: [/adminorder.jsp]
+rs cannot be resolved
+61:             out.print("<td>"+rs.getString(4));
+62:             out.print("<td>"+rs.getInt(5));
+63:             out.print("<td>"+rs.getString(6));
+64:             out.print("<td>"+rs.getInt(7));
+65:             out.print("<td>"+rs.getInt(8));
+66:             out.print("<td>"+rs.getString(9));
+67:             String status=rs.getString(10);
+
+
+An error occurred at line: [65] in the jsp file: [/adminorder.jsp]
+rs cannot be resolved
+62:             out.print("<td>"+rs.getInt(5));
+63:             out.print("<td>"+rs.getString(6));
+64:             out.print("<td>"+rs.getInt(7));
+65:             out.print("<td>"+rs.getInt(8));
+66:             out.print("<td>"+rs.getString(9));
+67:             String status=rs.getString(10);
+68:             out.print("<td>"+status);
+
+
+An error occurred at line: [66] in the jsp file: [/adminorder.jsp]
+rs cannot be resolved
+63:             out.print("<td>"+rs.getString(6));
+64:             out.print("<td>"+rs.getInt(7));
+65:             out.print("<td>"+rs.getInt(8));
+66:             out.print("<td>"+rs.getString(9));
+67:             String status=rs.getString(10);
+68:             out.print("<td>"+status);
+69:             if(status.equals("incomplete"))
+
+
+An error occurred at line: [67] in the jsp file: [/adminorder.jsp]
+rs cannot be resolved
+64:             out.print("<td>"+rs.getInt(7));
+65:             out.print("<td>"+rs.getInt(8));
+66:             out.print("<td>"+rs.getString(9));
+67:             String status=rs.getString(10);
+68:             out.print("<td>"+status);
+69:             if(status.equals("incomplete"))
+70:              {                          
+
+
+An error occurred at line: [71] in the jsp file: [/adminorder.jsp]
+rs cannot be resolved
+68:             out.print("<td>"+status);
+69:             if(status.equals("incomplete"))
+70:              {                          
+71:                 out.print("<td><form method='get' action='assignsupplier.jsp'><input type='hidden' name='t1' value='"+rs.getInt(1)+"'><input type='submit' value='Assign Now'>");
+72:              }
+73:             out.print("</tr>");
+74:        }
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+12-Jun-2021 19:21:44.936 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [64] in the jsp file: [/assignsupplier.jsp]
+c1 cannot be resolved to a variable
+61:             out.print("<td>"+rs.getLong(4));
+62:             out.print("<td>"+rs.getString(5));
+63:             HttpSession hs=request.getSession(true);
+64:              int oid=Integer.parseInt(request.getParameter(c1));
+65:              hs.setAttribute("soid",oid);
+66:             out.print("<td><form action='assignsupplier.jsp'><input type='checkbox' name='c2' value='"+rs.getInt(1)+"'>&nbsp;<input type='submit' value='Select'></form>");
+67:             out.print("</tr>");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [64] in the jsp file: [/assignsupplier.jsp]
+c1 cannot be resolved to a variable
+61:             out.print("<td>"+rs.getLong(4));
+62:             out.print("<td>"+rs.getString(5));
+63:             HttpSession hs=request.getSession(true);
+64:              int oid=Integer.parseInt(request.getParameter(c1));
+65:              hs.setAttribute("soid",oid);
+66:             out.print("<td><form action='assignsupplier.jsp'><input type='checkbox' name='c2' value='"+rs.getInt(1)+"'>&nbsp;<input type='submit' value='Select'></form>");
+67:             out.print("</tr>");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+12-Jun-2021 19:23:15.808 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [An exception occurred processing [/assignsupplier.jsp] at line [64]
+
+61:             out.print("<td>"+rs.getLong(4));
+62:             out.print("<td>"+rs.getString(5));
+63:             HttpSession hs=request.getSession(true);
+64:              int oid=Integer.parseInt(request.getParameter("c1"));
+65:              hs.setAttribute("soid",oid);
+66:             out.print("<td><form action='assignsupplier.jsp'><input type='checkbox' name='c2' value='"+rs.getInt(1)+"'>&nbsp;<input type='submit' value='Select'></form>");
+67:             out.print("</tr>");
+
+
+Stacktrace:] with root cause
+	java.lang.NumberFormatException: null
+		at java.base/java.lang.Integer.parseInt(Integer.java:614)
+		at java.base/java.lang.Integer.parseInt(Integer.java:770)
+		at org.apache.jsp.assignsupplier_jsp._jspService(assignsupplier_jsp.java:182)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+12-Jun-2021 19:26:53.653 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [64] in the jsp file: [/assignsupplier.jsp]
+The method getParameterValue(String) is undefined for the type HttpServletRequest
+61:             out.print("<td>"+rs.getLong(4));
+62:             out.print("<td>"+rs.getString(5));
+63:             HttpSession hs=request.getSession(true);
+64:              int oid=Integer.parseInt(request.getParameterValue("c1"));
+65:              hs.setAttribute("soid",oid);
+66:             out.print("<td><form action='assignsupplier.jsp'><input type='checkbox' name='c2' value='"+rs.getInt(1)+"'>&nbsp;<input type='submit' value='Select'></form>");
+67:             out.print("</tr>");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [64] in the jsp file: [/assignsupplier.jsp]
+The method getParameterValue(String) is undefined for the type HttpServletRequest
+61:             out.print("<td>"+rs.getLong(4));
+62:             out.print("<td>"+rs.getString(5));
+63:             HttpSession hs=request.getSession(true);
+64:              int oid=Integer.parseInt(request.getParameterValue("c1"));
+65:              hs.setAttribute("soid",oid);
+66:             out.print("<td><form action='assignsupplier.jsp'><input type='checkbox' name='c2' value='"+rs.getInt(1)+"'>&nbsp;<input type='submit' value='Select'></form>");
+67:             out.print("</tr>");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+12-Jun-2021 19:27:35.243 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [64] in the jsp file: [/assignsupplier.jsp]
+The method parseInt(String) in the type Integer is not applicable for the arguments (String[])
+61:             out.print("<td>"+rs.getLong(4));
+62:             out.print("<td>"+rs.getString(5));
+63:             HttpSession hs=request.getSession(true);
+64:              int oid=Integer.parseInt(request.getParameterValues("c1"));
+65:              hs.setAttribute("soid",oid);
+66:             out.print("<td><form action='assignsupplier.jsp'><input type='checkbox' name='c2' value='"+rs.getInt(1)+"'>&nbsp;<input type='submit' value='Select'></form>");
+67:             out.print("</tr>");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [64] in the jsp file: [/assignsupplier.jsp]
+The method parseInt(String) in the type Integer is not applicable for the arguments (String[])
+61:             out.print("<td>"+rs.getLong(4));
+62:             out.print("<td>"+rs.getString(5));
+63:             HttpSession hs=request.getSession(true);
+64:              int oid=Integer.parseInt(request.getParameterValues("c1"));
+65:              hs.setAttribute("soid",oid);
+66:             out.print("<td><form action='assignsupplier.jsp'><input type='checkbox' name='c2' value='"+rs.getInt(1)+"'>&nbsp;<input type='submit' value='Select'></form>");
+67:             out.print("</tr>");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+12-Jun-2021 19:28:34.797 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [An exception occurred processing [/assignsupplier.jsp] at line [64]
+
+61:             out.print("<td>"+rs.getLong(4));
+62:             out.print("<td>"+rs.getString(5));
+63:             HttpSession hs=request.getSession(true);
+64:              int oid=Integer.parseInt(request.getParameter("c1"));
+65:              hs.setAttribute("soid",oid);
+66:             out.print("<td><form action='assignsupplier.jsp'><input type='checkbox' name='c2' value='"+rs.getInt(1)+"'>&nbsp;<input type='submit' value='Select'></form>");
+67:             out.print("</tr>");
+
+
+Stacktrace:] with root cause
+	java.lang.NumberFormatException: null
+		at java.base/java.lang.Integer.parseInt(Integer.java:614)
+		at java.base/java.lang.Integer.parseInt(Integer.java:770)
+		at org.apache.jsp.assignsupplier_jsp._jspService(assignsupplier_jsp.java:182)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+12-Jun-2021 19:30:16.495 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [13] in the jsp file: [/orderassignsuccess.jsp]
+Type mismatch: cannot convert from String to int
+10:       </head>
+11:     <body bgcolor="#292929">
+12:         <%
+13:          int sid=request.getParameter("c2");
+14:          HttpSession hs=request.getSession(true);
+15:          int oid=(int)hs.getAttribute("soid");
+16:         Class.forName("org.postgresql.Driver");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [13] in the jsp file: [/orderassignsuccess.jsp]
+Type mismatch: cannot convert from String to int
+10:       </head>
+11:     <body bgcolor="#292929">
+12:         <%
+13:          int sid=request.getParameter("c2");
+14:          HttpSession hs=request.getSession(true);
+15:          int oid=(int)hs.getAttribute("soid");
+16:         Class.forName("org.postgresql.Driver");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+12-Jun-2021 19:30:42.562 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [13] in the jsp file: [/orderassignsuccess.jsp]
+Cannot cast from String to int
+10:       </head>
+11:     <body bgcolor="#292929">
+12:         <%
+13:          int sid=(int)request.getParameter("c2");
+14:          HttpSession hs=request.getSession(true);
+15:          int oid=(int)hs.getAttribute("soid");
+16:         Class.forName("org.postgresql.Driver");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [13] in the jsp file: [/orderassignsuccess.jsp]
+Cannot cast from String to int
+10:       </head>
+11:     <body bgcolor="#292929">
+12:         <%
+13:          int sid=(int)request.getParameter("c2");
+14:          HttpSession hs=request.getSession(true);
+15:          int oid=(int)hs.getAttribute("soid");
+16:         Class.forName("org.postgresql.Driver");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+12-Jun-2021 19:45:19.339 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [66] in the jsp file: [/assignsupplier.jsp]
+The left-hand side of an assignment must be a variable
+63:             HttpSession hs=request.getSession(true);
+64:              int oid=Integer.parseInt(request.getParameter("r1"));
+65:              hs.setAttribute("soid",oid);
+66:             out.print("<td><form method="post" action='orderassignsuccess.jsp'><input type='radio' name='r2' value='"+rs.getInt(1)+"'>&nbsp;<input type='submit' value='Select'></form>");
+67:             out.print("</tr>");
+68:          }
+69:         out.print("</table>");
+
+
+An error occurred at line: [66] in the jsp file: [/assignsupplier.jsp]
+Syntax error on token "post", invalid AssignmentOperator
+63:             HttpSession hs=request.getSession(true);
+64:              int oid=Integer.parseInt(request.getParameter("r1"));
+65:              hs.setAttribute("soid",oid);
+66:             out.print("<td><form method="post" action='orderassignsuccess.jsp'><input type='radio' name='r2' value='"+rs.getInt(1)+"'>&nbsp;<input type='submit' value='Select'></form>");
+67:             out.print("</tr>");
+68:          }
+69:         out.print("</table>");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [66] in the jsp file: [/assignsupplier.jsp]
+The left-hand side of an assignment must be a variable
+63:             HttpSession hs=request.getSession(true);
+64:              int oid=Integer.parseInt(request.getParameter("r1"));
+65:              hs.setAttribute("soid",oid);
+66:             out.print("<td><form method="post" action='orderassignsuccess.jsp'><input type='radio' name='r2' value='"+rs.getInt(1)+"'>&nbsp;<input type='submit' value='Select'></form>");
+67:             out.print("</tr>");
+68:          }
+69:         out.print("</table>");
+
+
+An error occurred at line: [66] in the jsp file: [/assignsupplier.jsp]
+Syntax error on token "post", invalid AssignmentOperator
+63:             HttpSession hs=request.getSession(true);
+64:              int oid=Integer.parseInt(request.getParameter("r1"));
+65:              hs.setAttribute("soid",oid);
+66:             out.print("<td><form method="post" action='orderassignsuccess.jsp'><input type='radio' name='r2' value='"+rs.getInt(1)+"'>&nbsp;<input type='submit' value='Select'></form>");
+67:             out.print("</tr>");
+68:          }
+69:         out.print("</table>");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+12-Jun-2021 19:45:55.605 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [An exception occurred processing [/assignsupplier.jsp] at line [64]
+
+61:             out.print("<td>"+rs.getLong(4));
+62:             out.print("<td>"+rs.getString(5));
+63:             HttpSession hs=request.getSession(true);
+64:              int oid=Integer.parseInt(request.getParameter("r1"));
+65:              hs.setAttribute("soid",oid);
+66:             out.print("<td><form method='post' action='orderassignsuccess.jsp'><input type='radio' name='r2' value='"+rs.getInt(1)+"'>&nbsp;<input type='submit' value='Select'></form>");
+67:             out.print("</tr>");
+
+
+Stacktrace:] with root cause
+	java.lang.NumberFormatException: null
+		at java.base/java.lang.Integer.parseInt(Integer.java:614)
+		at java.base/java.lang.Integer.parseInt(Integer.java:770)
+		at org.apache.jsp.assignsupplier_jsp._jspService(assignsupplier_jsp.java:182)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+12-Jun-2021 20:30:14.494 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [69] in the jsp file: [/supplierorder.jsp]
+Duplicate local variable hs
+66:        out.print("Unable to connect :(");
+67:        else
+68:        {
+69:        HttpSession hs=request.getSession(true);
+70:        String name=(String)hs.getAttribute("supplier");
+71:        Statement st=con.createStatement();
+72:        ResultSet rs=st.executeQuery("select oid,odate,otype,ordered_qty,deldate,payment_status,status from orders where sid=(select sid from supplier_login where username='"+name+"')");
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [69] in the jsp file: [/supplierorder.jsp]
+Duplicate local variable hs
+66:        out.print("Unable to connect :(");
+67:        else
+68:        {
+69:        HttpSession hs=request.getSession(true);
+70:        String name=(String)hs.getAttribute("supplier");
+71:        Statement st=con.createStatement();
+72:        ResultSet rs=st.executeQuery("select oid,odate,otype,ordered_qty,deldate,payment_status,status from orders where sid=(select sid from supplier_login where username='"+name+"')");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+12-Jun-2021 22:42:39.516 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [An exception occurred processing [/neworder.jsp] at line [58]
+
+55:                else
+56:                {
+57:                 String del=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+(d1.getDate()+1);
+58:                 st.executeUpdate("insert into orders values("+(id+1)+",'"+a+"','"+b+"','"+type+"',"+qty+",'"+del+"',"+cno+",1,'unpaid','incomplete',0)");
+59:                }
+60:   
+61:                 float total=(float)qty*rate;              
+
+
+Stacktrace:] with root cause
+	org.postgresql.util.PSQLException: ERROR: insert or update on table "orders" violates foreign key constraint "orders_sid_fkey"
+  Detail: Key (sid)=(0) is not present in table "supplier".
+		at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2553)
+		at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2285)
+		at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:323)
+		at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:473)
+		at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:393)
+		at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
+		at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
+		at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
+		at org.postgresql.jdbc.PgStatement.executeUpdate(PgStatement.java:258)
+		at org.apache.jsp.neworder_jsp._jspService(neworder_jsp.java:178)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+12-Jun-2021 22:44:01.877 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [An exception occurred processing [/neworder.jsp] at line [58]
+
+55:                else
+56:                {
+57:                 String del=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+(d1.getDate()+1);
+58:                 st.executeUpdate("insert into orders values("+(id+1)+",'"+a+"','"+b+"','"+type+"',"+qty+",'"+del+"',"+cno+",1,'unpaid','incomplete',)");
+59:                }
+60:   
+61:                 float total=(float)qty*rate;              
+
+
+Stacktrace:] with root cause
+	org.postgresql.util.PSQLException: ERROR: syntax error at or near ")"
+  Position: 104
+		at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2553)
+		at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2285)
+		at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:323)
+		at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:473)
+		at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:393)
+		at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
+		at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
+		at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
+		at org.postgresql.jdbc.PgStatement.executeUpdate(PgStatement.java:258)
+		at org.apache.jsp.neworder_jsp._jspService(neworder_jsp.java:178)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)

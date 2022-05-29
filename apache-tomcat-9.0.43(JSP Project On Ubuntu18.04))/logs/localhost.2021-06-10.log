@@ -1,0 +1,4015 @@
+10-Jun-2021 09:18:09.162 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+10-Jun-2021 09:18:09.162 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+10-Jun-2021 09:18:09.165 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@414f13fc')
+10-Jun-2021 14:33:56.123 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [44] in the jsp file: [/adminorder.jsp]
+The left-hand side of an assignment must be a variable
+41:        Statement st=con.createStatement();
+42:        ResultSet rs=st.executeQuery("select * from orders");
+43:        out.print("<font face='arial' size='4' color='#eee6e2'>");
+44:        out.print("<table cellspacing='0' width='900' class="border">");
+45:        out.print("<caption>Order Information</caption>");
+46:        out.print("<tr bgcolor='#f6a00b'><th>Id</th><th>Date</th><th>Time</th><th>Type</th><th>Quantity</th><th>Delivery Date</th><th>cno</th><th>aid</th><th>Status</th></tr>");
+47:         while(rs.next())
+
+
+An error occurred at line: [44] in the jsp file: [/adminorder.jsp]
+Syntax error on token "border", invalid AssignmentOperator
+41:        Statement st=con.createStatement();
+42:        ResultSet rs=st.executeQuery("select * from orders");
+43:        out.print("<font face='arial' size='4' color='#eee6e2'>");
+44:        out.print("<table cellspacing='0' width='900' class="border">");
+45:        out.print("<caption>Order Information</caption>");
+46:        out.print("<tr bgcolor='#f6a00b'><th>Id</th><th>Date</th><th>Time</th><th>Type</th><th>Quantity</th><th>Delivery Date</th><th>cno</th><th>aid</th><th>Status</th></tr>");
+47:         while(rs.next())
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [44] in the jsp file: [/adminorder.jsp]
+The left-hand side of an assignment must be a variable
+41:        Statement st=con.createStatement();
+42:        ResultSet rs=st.executeQuery("select * from orders");
+43:        out.print("<font face='arial' size='4' color='#eee6e2'>");
+44:        out.print("<table cellspacing='0' width='900' class="border">");
+45:        out.print("<caption>Order Information</caption>");
+46:        out.print("<tr bgcolor='#f6a00b'><th>Id</th><th>Date</th><th>Time</th><th>Type</th><th>Quantity</th><th>Delivery Date</th><th>cno</th><th>aid</th><th>Status</th></tr>");
+47:         while(rs.next())
+
+
+An error occurred at line: [44] in the jsp file: [/adminorder.jsp]
+Syntax error on token "border", invalid AssignmentOperator
+41:        Statement st=con.createStatement();
+42:        ResultSet rs=st.executeQuery("select * from orders");
+43:        out.print("<font face='arial' size='4' color='#eee6e2'>");
+44:        out.print("<table cellspacing='0' width='900' class="border">");
+45:        out.print("<caption>Order Information</caption>");
+46:        out.print("<tr bgcolor='#f6a00b'><th>Id</th><th>Date</th><th>Time</th><th>Type</th><th>Quantity</th><th>Delivery Date</th><th>cno</th><th>aid</th><th>Status</th></tr>");
+47:         while(rs.next())
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-Jun-2021 19:59:29.737 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [An exception occurred processing [custdebit.jsp] at line [25]
+
+22:         <tr><td colspan="2" align="center"><font color="#f6a00b" face="arial" size="5"> 
+23:           <%
+24:              hs=request.getSession(true);
+25:              tot=(float)hs.getAttribute("total");
+26:              out.print("Total Bill ₹"+tot);
+27:           %> </font></tr>
+28:          <tr>
+
+
+Stacktrace:] with root cause
+	java.lang.NullPointerException
+		at org.apache.jsp.custdebit_jsp._jspService(custdebit_jsp.java:142)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-Jun-2021 22:42:12.274 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [/custupi.jsp (line: [1], column: [97]) The JSP specification requires that an attribute name is preceded by whitespace] with root cause
+	org.apache.jasper.JasperException: /custupi.jsp (line: [1], column: [97]) The JSP specification requires that an attribute name is preceded by whitespace
+		at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:42)
+		at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:292)
+		at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:98)
+		at org.apache.jasper.compiler.Parser.parseAttributes(Parser.java:170)
+		at org.apache.jasper.compiler.Parser.parseAttributes(Parser.java:196)
+		at org.apache.jasper.compiler.ParserController.getPageEncodingForJspSyntax(ParserController.java:459)
+		at org.apache.jasper.compiler.ParserController.determineSyntaxAndEncoding(ParserController.java:401)
+		at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:200)
+		at org.apache.jasper.compiler.ParserController.parseDirectives(ParserController.java:127)
+		at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:202)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:386)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-Jun-2021 22:42:51.194 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [/custupi.jsp (line: [1], column: [94]) The JSP specification requires that an attribute name is preceded by whitespace] with root cause
+	org.apache.jasper.JasperException: /custupi.jsp (line: [1], column: [94]) The JSP specification requires that an attribute name is preceded by whitespace
+		at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:42)
+		at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:292)
+		at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:98)
+		at org.apache.jasper.compiler.Parser.parseAttributes(Parser.java:170)
+		at org.apache.jasper.compiler.Parser.parseAttributes(Parser.java:196)
+		at org.apache.jasper.compiler.ParserController.getPageEncodingForJspSyntax(ParserController.java:459)
+		at org.apache.jasper.compiler.ParserController.determineSyntaxAndEncoding(ParserController.java:401)
+		at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:200)
+		at org.apache.jasper.compiler.ParserController.parseDirectives(ParserController.java:127)
+		at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:202)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:386)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-Jun-2021 22:43:23.809 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [40] in the jsp file: [/custupi.jsp]
+cno cannot be resolved to a variable
+37:          String S=(String)hs.getAttribute("user");
+38:          ResultSet rs=st.executeQuery("select cno from cust_login where username='"+S+"'");      
+39:          if(rs.next())
+40:          cno=rs.getInt(1);
+41:          int pid=(int)(Math.random()*(max-min+1)+min);
+42:          String ptype="UPI";
+43:          Date d1=new Date();
+
+
+An error occurred at line: [41] in the jsp file: [/custupi.jsp]
+max cannot be resolved to a variable
+38:          ResultSet rs=st.executeQuery("select cno from cust_login where username='"+S+"'");      
+39:          if(rs.next())
+40:          cno=rs.getInt(1);
+41:          int pid=(int)(Math.random()*(max-min+1)+min);
+42:          String ptype="UPI";
+43:          Date d1=new Date();
+44:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+
+
+An error occurred at line: [41] in the jsp file: [/custupi.jsp]
+min cannot be resolved to a variable
+38:          ResultSet rs=st.executeQuery("select cno from cust_login where username='"+S+"'");      
+39:          if(rs.next())
+40:          cno=rs.getInt(1);
+41:          int pid=(int)(Math.random()*(max-min+1)+min);
+42:          String ptype="UPI";
+43:          Date d1=new Date();
+44:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+
+
+An error occurred at line: [41] in the jsp file: [/custupi.jsp]
+min cannot be resolved to a variable
+38:          ResultSet rs=st.executeQuery("select cno from cust_login where username='"+S+"'");      
+39:          if(rs.next())
+40:          cno=rs.getInt(1);
+41:          int pid=(int)(Math.random()*(max-min+1)+min);
+42:          String ptype="UPI";
+43:          Date d1=new Date();
+44:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+
+
+An error occurred at line: [43] in the jsp file: [/custupi.jsp]
+The type Date is ambiguous
+40:          cno=rs.getInt(1);
+41:          int pid=(int)(Math.random()*(max-min+1)+min);
+42:          String ptype="UPI";
+43:          Date d1=new Date();
+44:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+45:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+46:          float pamount=tot;
+
+
+An error occurred at line: [43] in the jsp file: [/custupi.jsp]
+The type Date is ambiguous
+40:          cno=rs.getInt(1);
+41:          int pid=(int)(Math.random()*(max-min+1)+min);
+42:          String ptype="UPI";
+43:          Date d1=new Date();
+44:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+45:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+46:          float pamount=tot;
+
+
+An error occurred at line: [48] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+45:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+46:          float pamount=tot;
+47:          int aid=1;         
+48:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+49:          if(k==1)
+50:          out.print("Payment successful..");
+51:          else
+
+
+An error occurred at line: [48] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+45:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+46:          float pamount=tot;
+47:          int aid=1;         
+48:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+49:          if(k==1)
+50:          out.print("Payment successful..");
+51:          else
+
+
+An error occurred at line: [48] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+45:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+46:          float pamount=tot;
+47:          int aid=1;         
+48:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+49:          if(k==1)
+50:          out.print("Payment successful..");
+51:          else
+
+
+An error occurred at line: [48] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+45:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+46:          float pamount=tot;
+47:          int aid=1;         
+48:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+49:          if(k==1)
+50:          out.print("Payment successful..");
+51:          else
+
+
+An error occurred at line: [48] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+45:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+46:          float pamount=tot;
+47:          int aid=1;         
+48:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+49:          if(k==1)
+50:          out.print("Payment successful..");
+51:          else
+
+
+An error occurred at line: [48] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+45:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+46:          float pamount=tot;
+47:          int aid=1;         
+48:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+49:          if(k==1)
+50:          out.print("Payment successful..");
+51:          else
+
+
+An error occurred at line: [48] in the jsp file: [/custupi.jsp]
+Syntax error on token "?", invalid (
+45:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+46:          float pamount=tot;
+47:          int aid=1;         
+48:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+49:          if(k==1)
+50:          out.print("Payment successful..");
+51:          else
+
+
+An error occurred at line: [48] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+45:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+46:          float pamount=tot;
+47:          int aid=1;         
+48:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+49:          if(k==1)
+50:          out.print("Payment successful..");
+51:          else
+
+
+An error occurred at line: [48] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+45:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+46:          float pamount=tot;
+47:          int aid=1;         
+48:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+49:          if(k==1)
+50:          out.print("Payment successful..");
+51:          else
+
+
+An error occurred at line: [48] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+45:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+46:          float pamount=tot;
+47:          int aid=1;         
+48:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+49:          if(k==1)
+50:          out.print("Payment successful..");
+51:          else
+
+
+An error occurred at line: [48] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+45:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+46:          float pamount=tot;
+47:          int aid=1;         
+48:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+49:          if(k==1)
+50:          out.print("Payment successful..");
+51:          else
+
+
+An error occurred at line: [48] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+45:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+46:          float pamount=tot;
+47:          int aid=1;         
+48:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+49:          if(k==1)
+50:          out.print("Payment successful..");
+51:          else
+
+
+An error occurred at line: [48] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+45:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+46:          float pamount=tot;
+47:          int aid=1;         
+48:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+49:          if(k==1)
+50:          out.print("Payment successful..");
+51:          else
+
+
+An error occurred at line: [48] in the jsp file: [/custupi.jsp]
+Syntax error, insert ")" to complete Expression
+45:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+46:          float pamount=tot;
+47:          int aid=1;         
+48:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+49:          if(k==1)
+50:          out.print("Payment successful..");
+51:          else
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [40] in the jsp file: [/custupi.jsp]
+cno cannot be resolved to a variable
+37:          String S=(String)hs.getAttribute("user");
+38:          ResultSet rs=st.executeQuery("select cno from cust_login where username='"+S+"'");      
+39:          if(rs.next())
+40:          cno=rs.getInt(1);
+41:          int pid=(int)(Math.random()*(max-min+1)+min);
+42:          String ptype="UPI";
+43:          Date d1=new Date();
+
+
+An error occurred at line: [41] in the jsp file: [/custupi.jsp]
+max cannot be resolved to a variable
+38:          ResultSet rs=st.executeQuery("select cno from cust_login where username='"+S+"'");      
+39:          if(rs.next())
+40:          cno=rs.getInt(1);
+41:          int pid=(int)(Math.random()*(max-min+1)+min);
+42:          String ptype="UPI";
+43:          Date d1=new Date();
+44:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+
+
+An error occurred at line: [41] in the jsp file: [/custupi.jsp]
+min cannot be resolved to a variable
+38:          ResultSet rs=st.executeQuery("select cno from cust_login where username='"+S+"'");      
+39:          if(rs.next())
+40:          cno=rs.getInt(1);
+41:          int pid=(int)(Math.random()*(max-min+1)+min);
+42:          String ptype="UPI";
+43:          Date d1=new Date();
+44:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+
+
+An error occurred at line: [41] in the jsp file: [/custupi.jsp]
+min cannot be resolved to a variable
+38:          ResultSet rs=st.executeQuery("select cno from cust_login where username='"+S+"'");      
+39:          if(rs.next())
+40:          cno=rs.getInt(1);
+41:          int pid=(int)(Math.random()*(max-min+1)+min);
+42:          String ptype="UPI";
+43:          Date d1=new Date();
+44:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+
+
+An error occurred at line: [43] in the jsp file: [/custupi.jsp]
+The type Date is ambiguous
+40:          cno=rs.getInt(1);
+41:          int pid=(int)(Math.random()*(max-min+1)+min);
+42:          String ptype="UPI";
+43:          Date d1=new Date();
+44:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+45:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+46:          float pamount=tot;
+
+
+An error occurred at line: [43] in the jsp file: [/custupi.jsp]
+The type Date is ambiguous
+40:          cno=rs.getInt(1);
+41:          int pid=(int)(Math.random()*(max-min+1)+min);
+42:          String ptype="UPI";
+43:          Date d1=new Date();
+44:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+45:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+46:          float pamount=tot;
+
+
+An error occurred at line: [48] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+45:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+46:          float pamount=tot;
+47:          int aid=1;         
+48:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+49:          if(k==1)
+50:          out.print("Payment successful..");
+51:          else
+
+
+An error occurred at line: [48] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+45:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+46:          float pamount=tot;
+47:          int aid=1;         
+48:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+49:          if(k==1)
+50:          out.print("Payment successful..");
+51:          else
+
+
+An error occurred at line: [48] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+45:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+46:          float pamount=tot;
+47:          int aid=1;         
+48:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+49:          if(k==1)
+50:          out.print("Payment successful..");
+51:          else
+
+
+An error occurred at line: [48] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+45:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+46:          float pamount=tot;
+47:          int aid=1;         
+48:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+49:          if(k==1)
+50:          out.print("Payment successful..");
+51:          else
+
+
+An error occurred at line: [48] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+45:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+46:          float pamount=tot;
+47:          int aid=1;         
+48:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+49:          if(k==1)
+50:          out.print("Payment successful..");
+51:          else
+
+
+An error occurred at line: [48] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+45:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+46:          float pamount=tot;
+47:          int aid=1;         
+48:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+49:          if(k==1)
+50:          out.print("Payment successful..");
+51:          else
+
+
+An error occurred at line: [48] in the jsp file: [/custupi.jsp]
+Syntax error on token "?", invalid (
+45:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+46:          float pamount=tot;
+47:          int aid=1;         
+48:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+49:          if(k==1)
+50:          out.print("Payment successful..");
+51:          else
+
+
+An error occurred at line: [48] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+45:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+46:          float pamount=tot;
+47:          int aid=1;         
+48:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+49:          if(k==1)
+50:          out.print("Payment successful..");
+51:          else
+
+
+An error occurred at line: [48] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+45:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+46:          float pamount=tot;
+47:          int aid=1;         
+48:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+49:          if(k==1)
+50:          out.print("Payment successful..");
+51:          else
+
+
+An error occurred at line: [48] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+45:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+46:          float pamount=tot;
+47:          int aid=1;         
+48:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+49:          if(k==1)
+50:          out.print("Payment successful..");
+51:          else
+
+
+An error occurred at line: [48] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+45:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+46:          float pamount=tot;
+47:          int aid=1;         
+48:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+49:          if(k==1)
+50:          out.print("Payment successful..");
+51:          else
+
+
+An error occurred at line: [48] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+45:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+46:          float pamount=tot;
+47:          int aid=1;         
+48:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+49:          if(k==1)
+50:          out.print("Payment successful..");
+51:          else
+
+
+An error occurred at line: [48] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+45:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+46:          float pamount=tot;
+47:          int aid=1;         
+48:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+49:          if(k==1)
+50:          out.print("Payment successful..");
+51:          else
+
+
+An error occurred at line: [48] in the jsp file: [/custupi.jsp]
+Syntax error, insert ")" to complete Expression
+45:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+46:          float pamount=tot;
+47:          int aid=1;         
+48:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+49:          if(k==1)
+50:          out.print("Payment successful..");
+51:          else
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-Jun-2021 22:44:01.716 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [42] in the jsp file: [/custupi.jsp]
+max cannot be resolved to a variable
+39:          int cno=0;
+40:          if(rs.next())
+41:          cno=rs.getInt(1);
+42:          int pid=(int)(Math.random()*(max-min+1)+min);
+43:          String ptype="UPI";
+44:          Date d1=new Date();
+45:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+
+
+An error occurred at line: [42] in the jsp file: [/custupi.jsp]
+min cannot be resolved to a variable
+39:          int cno=0;
+40:          if(rs.next())
+41:          cno=rs.getInt(1);
+42:          int pid=(int)(Math.random()*(max-min+1)+min);
+43:          String ptype="UPI";
+44:          Date d1=new Date();
+45:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+
+
+An error occurred at line: [42] in the jsp file: [/custupi.jsp]
+min cannot be resolved to a variable
+39:          int cno=0;
+40:          if(rs.next())
+41:          cno=rs.getInt(1);
+42:          int pid=(int)(Math.random()*(max-min+1)+min);
+43:          String ptype="UPI";
+44:          Date d1=new Date();
+45:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+
+
+An error occurred at line: [44] in the jsp file: [/custupi.jsp]
+The type Date is ambiguous
+41:          cno=rs.getInt(1);
+42:          int pid=(int)(Math.random()*(max-min+1)+min);
+43:          String ptype="UPI";
+44:          Date d1=new Date();
+45:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+46:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+47:          float pamount=tot;
+
+
+An error occurred at line: [44] in the jsp file: [/custupi.jsp]
+The type Date is ambiguous
+41:          cno=rs.getInt(1);
+42:          int pid=(int)(Math.random()*(max-min+1)+min);
+43:          String ptype="UPI";
+44:          Date d1=new Date();
+45:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+46:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+47:          float pamount=tot;
+
+
+An error occurred at line: [49] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+46:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+47:          float pamount=tot;
+48:          int aid=1;         
+49:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+50:          if(k==1)
+51:          out.print("Payment successful..");
+52:          else
+
+
+An error occurred at line: [49] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+46:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+47:          float pamount=tot;
+48:          int aid=1;         
+49:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+50:          if(k==1)
+51:          out.print("Payment successful..");
+52:          else
+
+
+An error occurred at line: [49] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+46:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+47:          float pamount=tot;
+48:          int aid=1;         
+49:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+50:          if(k==1)
+51:          out.print("Payment successful..");
+52:          else
+
+
+An error occurred at line: [49] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+46:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+47:          float pamount=tot;
+48:          int aid=1;         
+49:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+50:          if(k==1)
+51:          out.print("Payment successful..");
+52:          else
+
+
+An error occurred at line: [49] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+46:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+47:          float pamount=tot;
+48:          int aid=1;         
+49:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+50:          if(k==1)
+51:          out.print("Payment successful..");
+52:          else
+
+
+An error occurred at line: [49] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+46:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+47:          float pamount=tot;
+48:          int aid=1;         
+49:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+50:          if(k==1)
+51:          out.print("Payment successful..");
+52:          else
+
+
+An error occurred at line: [49] in the jsp file: [/custupi.jsp]
+Syntax error on token "?", invalid (
+46:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+47:          float pamount=tot;
+48:          int aid=1;         
+49:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+50:          if(k==1)
+51:          out.print("Payment successful..");
+52:          else
+
+
+An error occurred at line: [49] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+46:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+47:          float pamount=tot;
+48:          int aid=1;         
+49:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+50:          if(k==1)
+51:          out.print("Payment successful..");
+52:          else
+
+
+An error occurred at line: [49] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+46:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+47:          float pamount=tot;
+48:          int aid=1;         
+49:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+50:          if(k==1)
+51:          out.print("Payment successful..");
+52:          else
+
+
+An error occurred at line: [49] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+46:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+47:          float pamount=tot;
+48:          int aid=1;         
+49:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+50:          if(k==1)
+51:          out.print("Payment successful..");
+52:          else
+
+
+An error occurred at line: [49] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+46:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+47:          float pamount=tot;
+48:          int aid=1;         
+49:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+50:          if(k==1)
+51:          out.print("Payment successful..");
+52:          else
+
+
+An error occurred at line: [49] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+46:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+47:          float pamount=tot;
+48:          int aid=1;         
+49:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+50:          if(k==1)
+51:          out.print("Payment successful..");
+52:          else
+
+
+An error occurred at line: [49] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+46:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+47:          float pamount=tot;
+48:          int aid=1;         
+49:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+50:          if(k==1)
+51:          out.print("Payment successful..");
+52:          else
+
+
+An error occurred at line: [49] in the jsp file: [/custupi.jsp]
+Syntax error, insert ")" to complete Expression
+46:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+47:          float pamount=tot;
+48:          int aid=1;         
+49:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+50:          if(k==1)
+51:          out.print("Payment successful..");
+52:          else
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [42] in the jsp file: [/custupi.jsp]
+max cannot be resolved to a variable
+39:          int cno=0;
+40:          if(rs.next())
+41:          cno=rs.getInt(1);
+42:          int pid=(int)(Math.random()*(max-min+1)+min);
+43:          String ptype="UPI";
+44:          Date d1=new Date();
+45:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+
+
+An error occurred at line: [42] in the jsp file: [/custupi.jsp]
+min cannot be resolved to a variable
+39:          int cno=0;
+40:          if(rs.next())
+41:          cno=rs.getInt(1);
+42:          int pid=(int)(Math.random()*(max-min+1)+min);
+43:          String ptype="UPI";
+44:          Date d1=new Date();
+45:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+
+
+An error occurred at line: [42] in the jsp file: [/custupi.jsp]
+min cannot be resolved to a variable
+39:          int cno=0;
+40:          if(rs.next())
+41:          cno=rs.getInt(1);
+42:          int pid=(int)(Math.random()*(max-min+1)+min);
+43:          String ptype="UPI";
+44:          Date d1=new Date();
+45:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+
+
+An error occurred at line: [44] in the jsp file: [/custupi.jsp]
+The type Date is ambiguous
+41:          cno=rs.getInt(1);
+42:          int pid=(int)(Math.random()*(max-min+1)+min);
+43:          String ptype="UPI";
+44:          Date d1=new Date();
+45:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+46:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+47:          float pamount=tot;
+
+
+An error occurred at line: [44] in the jsp file: [/custupi.jsp]
+The type Date is ambiguous
+41:          cno=rs.getInt(1);
+42:          int pid=(int)(Math.random()*(max-min+1)+min);
+43:          String ptype="UPI";
+44:          Date d1=new Date();
+45:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+46:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+47:          float pamount=tot;
+
+
+An error occurred at line: [49] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+46:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+47:          float pamount=tot;
+48:          int aid=1;         
+49:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+50:          if(k==1)
+51:          out.print("Payment successful..");
+52:          else
+
+
+An error occurred at line: [49] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+46:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+47:          float pamount=tot;
+48:          int aid=1;         
+49:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+50:          if(k==1)
+51:          out.print("Payment successful..");
+52:          else
+
+
+An error occurred at line: [49] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+46:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+47:          float pamount=tot;
+48:          int aid=1;         
+49:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+50:          if(k==1)
+51:          out.print("Payment successful..");
+52:          else
+
+
+An error occurred at line: [49] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+46:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+47:          float pamount=tot;
+48:          int aid=1;         
+49:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+50:          if(k==1)
+51:          out.print("Payment successful..");
+52:          else
+
+
+An error occurred at line: [49] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+46:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+47:          float pamount=tot;
+48:          int aid=1;         
+49:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+50:          if(k==1)
+51:          out.print("Payment successful..");
+52:          else
+
+
+An error occurred at line: [49] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+46:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+47:          float pamount=tot;
+48:          int aid=1;         
+49:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+50:          if(k==1)
+51:          out.print("Payment successful..");
+52:          else
+
+
+An error occurred at line: [49] in the jsp file: [/custupi.jsp]
+Syntax error on token "?", invalid (
+46:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+47:          float pamount=tot;
+48:          int aid=1;         
+49:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+50:          if(k==1)
+51:          out.print("Payment successful..");
+52:          else
+
+
+An error occurred at line: [49] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+46:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+47:          float pamount=tot;
+48:          int aid=1;         
+49:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+50:          if(k==1)
+51:          out.print("Payment successful..");
+52:          else
+
+
+An error occurred at line: [49] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+46:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+47:          float pamount=tot;
+48:          int aid=1;         
+49:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+50:          if(k==1)
+51:          out.print("Payment successful..");
+52:          else
+
+
+An error occurred at line: [49] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+46:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+47:          float pamount=tot;
+48:          int aid=1;         
+49:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+50:          if(k==1)
+51:          out.print("Payment successful..");
+52:          else
+
+
+An error occurred at line: [49] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+46:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+47:          float pamount=tot;
+48:          int aid=1;         
+49:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+50:          if(k==1)
+51:          out.print("Payment successful..");
+52:          else
+
+
+An error occurred at line: [49] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+46:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+47:          float pamount=tot;
+48:          int aid=1;         
+49:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+50:          if(k==1)
+51:          out.print("Payment successful..");
+52:          else
+
+
+An error occurred at line: [49] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+46:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+47:          float pamount=tot;
+48:          int aid=1;         
+49:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+50:          if(k==1)
+51:          out.print("Payment successful..");
+52:          else
+
+
+An error occurred at line: [49] in the jsp file: [/custupi.jsp]
+Syntax error, insert ")" to complete Expression
+46:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+47:          float pamount=tot;
+48:          int aid=1;         
+49:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+50:          if(k==1)
+51:          out.print("Payment successful..");
+52:          else
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-Jun-2021 22:44:55.448 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 100000000000 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    int max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 999999999999 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    int max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [45] in the jsp file: [/custupi.jsp]
+The type Date is ambiguous
+42:          cno=rs.getInt(1);
+43:          int pid=(int)(Math.random()*(max-min+1)+min);
+44:          String ptype="UPI";
+45:          Date d1=new Date();
+46:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+
+
+An error occurred at line: [45] in the jsp file: [/custupi.jsp]
+The type Date is ambiguous
+42:          cno=rs.getInt(1);
+43:          int pid=(int)(Math.random()*(max-min+1)+min);
+44:          String ptype="UPI";
+45:          Date d1=new Date();
+46:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "?", invalid (
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ")" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 100000000000 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    int max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 999999999999 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    int max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [45] in the jsp file: [/custupi.jsp]
+The type Date is ambiguous
+42:          cno=rs.getInt(1);
+43:          int pid=(int)(Math.random()*(max-min+1)+min);
+44:          String ptype="UPI";
+45:          Date d1=new Date();
+46:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+
+
+An error occurred at line: [45] in the jsp file: [/custupi.jsp]
+The type Date is ambiguous
+42:          cno=rs.getInt(1);
+43:          int pid=(int)(Math.random()*(max-min+1)+min);
+44:          String ptype="UPI";
+45:          Date d1=new Date();
+46:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "?", invalid (
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ")" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-Jun-2021 22:45:32.791 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 100000000000 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 999999999999 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [45] in the jsp file: [/custupi.jsp]
+The type Date is ambiguous
+42:          cno=rs.getInt(1);
+43:          long pid=(int)(Math.random()*(max-min+1)+min);
+44:          String ptype="UPI";
+45:          Date d1=new Date();
+46:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+
+
+An error occurred at line: [45] in the jsp file: [/custupi.jsp]
+The type Date is ambiguous
+42:          cno=rs.getInt(1);
+43:          long pid=(int)(Math.random()*(max-min+1)+min);
+44:          String ptype="UPI";
+45:          Date d1=new Date();
+46:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "?", invalid (
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ")" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 100000000000 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 999999999999 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [45] in the jsp file: [/custupi.jsp]
+The type Date is ambiguous
+42:          cno=rs.getInt(1);
+43:          long pid=(int)(Math.random()*(max-min+1)+min);
+44:          String ptype="UPI";
+45:          Date d1=new Date();
+46:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+
+
+An error occurred at line: [45] in the jsp file: [/custupi.jsp]
+The type Date is ambiguous
+42:          cno=rs.getInt(1);
+43:          long pid=(int)(Math.random()*(max-min+1)+min);
+44:          String ptype="UPI";
+45:          Date d1=new Date();
+46:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "?", invalid (
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ")" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-Jun-2021 22:49:34.160 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+Syntax error on token "int", delete this token
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long int max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 100000000000 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long int max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 999999999999 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long int max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [45] in the jsp file: [/custupi.jsp]
+The type Date is ambiguous
+42:          cno=rs.getInt(1);
+43:          long pid=(int)(Math.random()*(max-min+1)+min);
+44:          String ptype="UPI";
+45:          Date d1=new Date();
+46:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+
+
+An error occurred at line: [45] in the jsp file: [/custupi.jsp]
+The type Date is ambiguous
+42:          cno=rs.getInt(1);
+43:          long pid=(int)(Math.random()*(max-min+1)+min);
+44:          String ptype="UPI";
+45:          Date d1=new Date();
+46:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "?", invalid (
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ")" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+Syntax error on token "int", delete this token
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long int max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 100000000000 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long int max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 999999999999 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long int max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [45] in the jsp file: [/custupi.jsp]
+The type Date is ambiguous
+42:          cno=rs.getInt(1);
+43:          long pid=(int)(Math.random()*(max-min+1)+min);
+44:          String ptype="UPI";
+45:          Date d1=new Date();
+46:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+
+
+An error occurred at line: [45] in the jsp file: [/custupi.jsp]
+The type Date is ambiguous
+42:          cno=rs.getInt(1);
+43:          long pid=(int)(Math.random()*(max-min+1)+min);
+44:          String ptype="UPI";
+45:          Date d1=new Date();
+46:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "?", invalid (
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ")" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-Jun-2021 22:50:02.151 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 100000000000 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 999999999999 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [45] in the jsp file: [/custupi.jsp]
+The type Date is ambiguous
+42:          cno=rs.getInt(1);
+43:          long pid=(int)(Math.random()*(max-min+1)+min);
+44:          String ptype="UPI";
+45:          Date d1=new Date();
+46:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+
+
+An error occurred at line: [45] in the jsp file: [/custupi.jsp]
+The type Date is ambiguous
+42:          cno=rs.getInt(1);
+43:          long pid=(int)(Math.random()*(max-min+1)+min);
+44:          String ptype="UPI";
+45:          Date d1=new Date();
+46:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "?", invalid (
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ")" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 100000000000 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 999999999999 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [45] in the jsp file: [/custupi.jsp]
+The type Date is ambiguous
+42:          cno=rs.getInt(1);
+43:          long pid=(int)(Math.random()*(max-min+1)+min);
+44:          String ptype="UPI";
+45:          Date d1=new Date();
+46:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+
+
+An error occurred at line: [45] in the jsp file: [/custupi.jsp]
+The type Date is ambiguous
+42:          cno=rs.getInt(1);
+43:          long pid=(int)(Math.random()*(max-min+1)+min);
+44:          String ptype="UPI";
+45:          Date d1=new Date();
+46:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "?", invalid (
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ")" to complete Expression
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-Jun-2021 22:53:31.332 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 100000000000 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 999999999999 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [45] in the jsp file: [/custupi.jsp]
+The type Date is ambiguous
+42:          cno=rs.getInt(1);
+43:          long pid=(int)(Math.random()*(max-min+1)+min);
+44:          String ptype="UPI";
+45:          Date d1=new Date();
+46:          String pdate=(String)((d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate());
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+
+
+An error occurred at line: [45] in the jsp file: [/custupi.jsp]
+The type Date is ambiguous
+42:          cno=rs.getInt(1);
+43:          long pid=(int)(Math.random()*(max-min+1)+min);
+44:          String ptype="UPI";
+45:          Date d1=new Date();
+46:          String pdate=(String)((d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate());
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "?", invalid (
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ")" to complete Expression
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 100000000000 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 999999999999 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [45] in the jsp file: [/custupi.jsp]
+The type Date is ambiguous
+42:          cno=rs.getInt(1);
+43:          long pid=(int)(Math.random()*(max-min+1)+min);
+44:          String ptype="UPI";
+45:          Date d1=new Date();
+46:          String pdate=(String)((d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate());
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+
+
+An error occurred at line: [45] in the jsp file: [/custupi.jsp]
+The type Date is ambiguous
+42:          cno=rs.getInt(1);
+43:          long pid=(int)(Math.random()*(max-min+1)+min);
+44:          String ptype="UPI";
+45:          Date d1=new Date();
+46:          String pdate=(String)((d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate());
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "+", ++ expected
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error on token "?", invalid (
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ": Expression" to complete Expression
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+An error occurred at line: [50] in the jsp file: [/custupi.jsp]
+Syntax error, insert ")" to complete Expression
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+?+",'"+?+"','"+?+"','"+?+"',"+?+","+?+","+?+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-Jun-2021 22:56:24.057 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 100000000000 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 999999999999 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [45] in the jsp file: [/custupi.jsp]
+The type Date is ambiguous
+42:          cno=rs.getInt(1);
+43:          long pid=(int)(Math.random()*(max-min+1)+min);
+44:          String ptype="UPI";
+45:          Date d1=new Date();
+46:          String pdate=(String)((d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate());
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+
+
+An error occurred at line: [45] in the jsp file: [/custupi.jsp]
+The type Date is ambiguous
+42:          cno=rs.getInt(1);
+43:          long pid=(int)(Math.random()*(max-min+1)+min);
+44:          String ptype="UPI";
+45:          Date d1=new Date();
+46:          String pdate=(String)((d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate());
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 100000000000 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 999999999999 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [45] in the jsp file: [/custupi.jsp]
+The type Date is ambiguous
+42:          cno=rs.getInt(1);
+43:          long pid=(int)(Math.random()*(max-min+1)+min);
+44:          String ptype="UPI";
+45:          Date d1=new Date();
+46:          String pdate=(String)((d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate());
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+
+
+An error occurred at line: [45] in the jsp file: [/custupi.jsp]
+The type Date is ambiguous
+42:          cno=rs.getInt(1);
+43:          long pid=(int)(Math.random()*(max-min+1)+min);
+44:          String ptype="UPI";
+45:          Date d1=new Date();
+46:          String pdate=(String)((d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate());
+47:          String ptime=(String)(d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds());
+48:          float pamount=tot;
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-Jun-2021 23:01:53.480 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 100000000000 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 999999999999 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [45] in the jsp file: [/custupi.jsp]
+The constructor Date() is undefined
+42:          cno=rs.getInt(1);
+43:          long pid=(int)(Math.random()*(max-min+1)+min);
+44:          String ptype="UPI";
+45:          Date d1=new Date();
+46:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 100000000000 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 999999999999 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [45] in the jsp file: [/custupi.jsp]
+The constructor Date() is undefined
+42:          cno=rs.getInt(1);
+43:          long pid=(int)(Math.random()*(max-min+1)+min);
+44:          String ptype="UPI";
+45:          Date d1=new Date();
+46:          String pdate=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+d1.getDate();
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-Jun-2021 23:04:23.681 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 100000000000 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 999999999999 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 100000000000 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 999999999999 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-Jun-2021 23:08:28.925 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 100000000000 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 999999999999 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 100000000000 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 999999999999 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-Jun-2021 23:11:35.875 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 100000000000 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    Long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+Type mismatch: cannot convert from int to Long
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    Long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 999999999999 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    Long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+Type mismatch: cannot convert from int to Long
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    Long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 100000000000 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    Long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+Type mismatch: cannot convert from int to Long
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    Long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+The literal 999999999999 of type int is out of range 
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    Long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+An error occurred at line: [5] in the jsp file: [/custupi.jsp]
+Type mismatch: cannot convert from int to Long
+2: <%!          
+3:    HttpSession hs;   
+4:    float tot;
+5:    Long max=100000000000,min=999999999999;
+6: %>
+7: <!Doctype html>
+8: <html lang="en">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-Jun-2021 23:13:22.491 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [An exception occurred processing [/custupi.jsp] at line [31]
+
+28:            <td colspan="2" align="center"><input type="text" name="t1" placeholder="example@upi">
+29:          </tr>
+30:           <tr><td colspan="2" align="center"><input type="submit"
+31:           value='<% hs=request.getSession(true); tot=(float)hs.getAttribute("total"); out.print("Pay ₹"+tot);%>'></tr>
+32:       </table>
+33:   </form>
+34:  <%
+
+
+Stacktrace:] with root cause
+	java.lang.NullPointerException
+		at org.apache.jsp.custupi_jsp._jspService(custupi_jsp.java:158)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-Jun-2021 23:14:06.201 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [An exception occurred processing [neworder.jsp] at line [58]
+
+55:                else
+56:                {
+57:                 String del=(d1.getYear()+1900)+"-"+(d1.getMonth()+1)+"-"+(d1.getDate()+1);
+58:                 st.executeUpdate("insert into orders values("+(id+1)+",'"+a+"','"+b+"','"+type+"',"+qty+",'"+del+"',"+cno+",1,'fulfilled')");
+59:                }
+60:   
+61:                 float total=(float)qty*rate;              
+
+
+Stacktrace:] with root cause
+	org.postgresql.util.PSQLException: ERROR: insert or update on table "orders" violates foreign key constraint "orders_cno_fkey"
+  Detail: Key (cno)=(0) is not present in table "cust1".
+		at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2553)
+		at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2285)
+		at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:323)
+		at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:473)
+		at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:393)
+		at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
+		at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
+		at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
+		at org.postgresql.jdbc.PgStatement.executeUpdate(PgStatement.java:258)
+		at org.apache.jsp.neworder_jsp._jspService(neworder_jsp.java:178)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+10-Jun-2021 23:14:50.418 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [An exception occurred processing [/custupi.jsp] at line [50]
+
+47:          String ptime=d1.getHours()+":"+d1.getMinutes()+":"+d1.getSeconds();
+48:          float pamount=tot;
+49:          int aid=1;         
+50:          int k=st.executeUpdate("insert into payment values("+pid+",'"+ptype+"','"+pdate+"','"+ptime+"',"+pamount+",1,"+cno+")");
+51:          if(k==1)
+52:          out.print("Payment successful..");
+53:          else
+
+
+Stacktrace:] with root cause
+	org.postgresql.util.PSQLException: ERROR: integer out of range
+		at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2553)
+		at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2285)
+		at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:323)
+		at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:473)
+		at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:393)
+		at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
+		at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
+		at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
+		at org.postgresql.jdbc.PgStatement.executeUpdate(PgStatement.java:258)
+		at org.apache.jsp.custupi_jsp._jspService(custupi_jsp.java:179)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)

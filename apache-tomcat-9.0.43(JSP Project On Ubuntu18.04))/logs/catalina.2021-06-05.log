@@ -1,0 +1,589 @@
+05-Jun-2021 09:19:47.082 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.43
+05-Jun-2021 09:19:47.087 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 28 2021 20:25:45 UTC
+05-Jun-2021 09:19:47.087 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.43.0
+05-Jun-2021 09:19:47.087 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+05-Jun-2021 09:19:47.087 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-72-generic
+05-Jun-2021 09:19:47.087 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+05-Jun-2021 09:19:47.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+05-Jun-2021 09:19:47.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.10+9-Ubuntu-0ubuntu1.18.04
+05-Jun-2021 09:19:47.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+05-Jun-2021 09:19:47.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 09:19:47.089 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 09:19:47.139 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+05-Jun-2021 09:19:47.139 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+05-Jun-2021 09:19:47.140 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+05-Jun-2021 09:19:47.140 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+05-Jun-2021 09:19:47.140 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+05-Jun-2021 09:19:47.140 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/shweta/apache-tomcat-9.0.43/conf/logging.properties
+05-Jun-2021 09:19:47.141 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Jun-2021 09:19:47.141 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+05-Jun-2021 09:19:47.141 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-Jun-2021 09:19:47.141 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+05-Jun-2021 09:19:47.141 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+05-Jun-2021 09:19:47.141 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 09:19:47.142 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 09:19:47.142 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/shweta/apache-tomcat-9.0.43/temp
+05-Jun-2021 09:19:47.157 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+05-Jun-2021 09:19:47.818 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 09:19:47.881 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1454] milliseconds
+05-Jun-2021 09:19:47.989 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+05-Jun-2021 09:19:47.990 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.43]
+05-Jun-2021 09:19:48.032 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/ROOT]
+05-Jun-2021 09:19:48.709 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 09:19:48.758 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/ROOT] has finished in [726] ms
+05-Jun-2021 09:19:48.758 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/manager]
+05-Jun-2021 09:19:49.006 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 09:19:49.026 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/manager] has finished in [267] ms
+05-Jun-2021 09:19:49.026 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/docs]
+05-Jun-2021 09:19:49.217 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 09:19:49.220 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/docs] has finished in [194] ms
+05-Jun-2021 09:19:49.221 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/host-manager]
+05-Jun-2021 09:19:49.418 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 09:19:49.421 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/host-manager] has finished in [200] ms
+05-Jun-2021 09:19:49.422 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/examples]
+05-Jun-2021 09:19:50.347 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 09:19:50.376 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/examples] has finished in [954] ms
+05-Jun-2021 09:19:50.376 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/EggSupplier]
+05-Jun-2021 09:19:50.544 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 09:19:50.706 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/EggSupplier] has finished in [329] ms
+05-Jun-2021 09:19:50.719 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 09:19:50.762 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2880] milliseconds
+05-Jun-2021 09:31:44.261 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.43
+05-Jun-2021 09:31:44.266 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 28 2021 20:25:45 UTC
+05-Jun-2021 09:31:44.266 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.43.0
+05-Jun-2021 09:31:44.266 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+05-Jun-2021 09:31:44.267 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-72-generic
+05-Jun-2021 09:31:44.267 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+05-Jun-2021 09:31:44.267 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+05-Jun-2021 09:31:44.267 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.10+9-Ubuntu-0ubuntu1.18.04
+05-Jun-2021 09:31:44.268 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+05-Jun-2021 09:31:44.268 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 09:31:44.268 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 09:31:44.290 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+05-Jun-2021 09:31:44.290 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+05-Jun-2021 09:31:44.291 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+05-Jun-2021 09:31:44.291 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+05-Jun-2021 09:31:44.291 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+05-Jun-2021 09:31:44.291 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/shweta/apache-tomcat-9.0.43/conf/logging.properties
+05-Jun-2021 09:31:44.291 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Jun-2021 09:31:44.292 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+05-Jun-2021 09:31:44.292 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-Jun-2021 09:31:44.292 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+05-Jun-2021 09:31:44.292 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+05-Jun-2021 09:31:44.292 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 09:31:44.293 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 09:31:44.293 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/shweta/apache-tomcat-9.0.43/temp
+05-Jun-2021 09:31:44.295 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+05-Jun-2021 09:31:44.970 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 09:31:45.104 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1049)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:558)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1045)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:455)
+		at java.base/sun.nio.ch.Net.bind(Net.java:447)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:277)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:241)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1193)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1206)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:597)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:80)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1046)
+		... 13 more
+05-Jun-2021 09:31:45.108 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1203] milliseconds
+05-Jun-2021 09:31:45.255 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+05-Jun-2021 09:31:45.256 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.43]
+05-Jun-2021 09:31:45.267 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/ROOT]
+05-Jun-2021 09:31:45.857 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 09:31:45.918 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/ROOT] has finished in [650] ms
+05-Jun-2021 09:31:45.918 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/manager]
+05-Jun-2021 09:31:46.136 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 09:31:46.150 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/manager] has finished in [232] ms
+05-Jun-2021 09:31:46.151 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/docs]
+05-Jun-2021 09:31:46.323 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 09:31:46.327 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/docs] has finished in [175] ms
+05-Jun-2021 09:31:46.327 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/host-manager]
+05-Jun-2021 09:31:46.460 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 09:31:46.462 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/host-manager] has finished in [135] ms
+05-Jun-2021 09:31:46.463 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/examples]
+05-Jun-2021 09:31:46.992 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 09:31:47.021 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/examples] has finished in [557] ms
+05-Jun-2021 09:31:47.022 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/EggSupplier]
+05-Jun-2021 09:31:47.126 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 09:31:47.135 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/EggSupplier] has finished in [113] ms
+05-Jun-2021 09:31:47.152 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2039] milliseconds
+05-Jun-2021 09:31:47.157 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use (Bind failed)
+		at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:584)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+05-Jun-2021 09:31:47.158 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 09:31:47.158 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+05-Jun-2021 09:31:47.311 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 09:31:47.313 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 09:33:48.425 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+05-Jun-2021 09:33:48.428 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 09:33:48.441 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+05-Jun-2021 09:33:48.562 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 09:33:48.591 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 09:33:56.874 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.43
+05-Jun-2021 09:33:56.879 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 28 2021 20:25:45 UTC
+05-Jun-2021 09:33:56.880 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.43.0
+05-Jun-2021 09:33:56.880 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+05-Jun-2021 09:33:56.880 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-72-generic
+05-Jun-2021 09:33:56.880 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+05-Jun-2021 09:33:56.880 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+05-Jun-2021 09:33:56.880 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.10+9-Ubuntu-0ubuntu1.18.04
+05-Jun-2021 09:33:56.881 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+05-Jun-2021 09:33:56.881 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 09:33:56.881 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 09:33:56.901 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+05-Jun-2021 09:33:56.902 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+05-Jun-2021 09:33:56.902 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+05-Jun-2021 09:33:56.902 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+05-Jun-2021 09:33:56.902 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+05-Jun-2021 09:33:56.903 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/shweta/apache-tomcat-9.0.43/conf/logging.properties
+05-Jun-2021 09:33:56.903 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Jun-2021 09:33:56.903 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+05-Jun-2021 09:33:56.903 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-Jun-2021 09:33:56.903 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+05-Jun-2021 09:33:56.904 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+05-Jun-2021 09:33:56.904 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 09:33:56.904 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 09:33:56.904 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/shweta/apache-tomcat-9.0.43/temp
+05-Jun-2021 09:33:56.907 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+05-Jun-2021 09:33:57.494 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 09:33:57.537 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1007] milliseconds
+05-Jun-2021 09:33:57.623 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+05-Jun-2021 09:33:57.623 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.43]
+05-Jun-2021 09:33:57.635 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/ROOT]
+05-Jun-2021 09:33:58.224 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 09:33:58.265 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/ROOT] has finished in [629] ms
+05-Jun-2021 09:33:58.265 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/manager]
+05-Jun-2021 09:33:58.486 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 09:33:58.496 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/manager] has finished in [231] ms
+05-Jun-2021 09:33:58.496 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/docs]
+05-Jun-2021 09:33:58.653 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 09:33:58.656 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/docs] has finished in [159] ms
+05-Jun-2021 09:33:58.656 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/host-manager]
+05-Jun-2021 09:33:58.807 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 09:33:58.810 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/host-manager] has finished in [153] ms
+05-Jun-2021 09:33:58.810 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/examples]
+05-Jun-2021 09:33:59.202 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 09:33:59.236 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/examples] has finished in [426] ms
+05-Jun-2021 09:33:59.236 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/EggSupplier]
+05-Jun-2021 09:33:59.413 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 09:33:59.427 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/EggSupplier] has finished in [190] ms
+05-Jun-2021 09:33:59.432 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 09:33:59.478 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1940] milliseconds
+05-Jun-2021 09:34:43.481 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.43
+05-Jun-2021 09:34:43.490 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 28 2021 20:25:45 UTC
+05-Jun-2021 09:34:43.490 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.43.0
+05-Jun-2021 09:34:43.490 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+05-Jun-2021 09:34:43.490 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-72-generic
+05-Jun-2021 09:34:43.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+05-Jun-2021 09:34:43.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+05-Jun-2021 09:34:43.492 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.10+9-Ubuntu-0ubuntu1.18.04
+05-Jun-2021 09:34:43.492 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+05-Jun-2021 09:34:43.492 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 09:34:43.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 09:34:43.506 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+05-Jun-2021 09:34:43.506 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+05-Jun-2021 09:34:43.506 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+05-Jun-2021 09:34:43.506 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+05-Jun-2021 09:34:43.507 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+05-Jun-2021 09:34:43.507 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/shweta/apache-tomcat-9.0.43/conf/logging.properties
+05-Jun-2021 09:34:43.507 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Jun-2021 09:34:43.507 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+05-Jun-2021 09:34:43.508 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-Jun-2021 09:34:43.508 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+05-Jun-2021 09:34:43.508 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+05-Jun-2021 09:34:43.508 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 09:34:43.508 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 09:34:43.508 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/shweta/apache-tomcat-9.0.43/temp
+05-Jun-2021 09:34:43.511 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+05-Jun-2021 09:34:44.097 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 09:34:44.118 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1049)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:558)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1045)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:455)
+		at java.base/sun.nio.ch.Net.bind(Net.java:447)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:277)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:241)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1193)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1206)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:597)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:80)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1046)
+		... 13 more
+05-Jun-2021 09:34:44.119 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [991] milliseconds
+05-Jun-2021 09:34:44.204 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+05-Jun-2021 09:34:44.204 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.43]
+05-Jun-2021 09:34:44.218 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/ROOT]
+05-Jun-2021 09:34:44.730 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 09:34:44.778 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/ROOT] has finished in [560] ms
+05-Jun-2021 09:34:44.778 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/manager]
+05-Jun-2021 09:34:45.022 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 09:34:45.033 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/manager] has finished in [255] ms
+05-Jun-2021 09:34:45.034 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/docs]
+05-Jun-2021 09:34:45.176 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 09:34:45.178 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/docs] has finished in [145] ms
+05-Jun-2021 09:34:45.179 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/host-manager]
+05-Jun-2021 09:34:45.341 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 09:34:45.344 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/host-manager] has finished in [165] ms
+05-Jun-2021 09:34:45.345 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/examples]
+05-Jun-2021 09:34:45.811 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 09:34:45.852 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/examples] has finished in [507] ms
+05-Jun-2021 09:34:45.855 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/EggSupplier]
+05-Jun-2021 09:34:46.030 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 09:34:46.047 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/EggSupplier] has finished in [193] ms
+05-Jun-2021 09:34:46.064 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1944] milliseconds
+05-Jun-2021 09:34:46.068 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use (Bind failed)
+		at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:584)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+05-Jun-2021 09:34:46.080 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 09:34:46.081 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+05-Jun-2021 09:34:46.131 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 09:34:46.132 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 09:34:59.110 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+05-Jun-2021 09:34:59.111 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 09:34:59.119 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+05-Jun-2021 09:34:59.163 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 09:34:59.172 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 09:35:02.922 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.43
+05-Jun-2021 09:35:02.926 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 28 2021 20:25:45 UTC
+05-Jun-2021 09:35:02.926 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.43.0
+05-Jun-2021 09:35:02.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+05-Jun-2021 09:35:02.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-72-generic
+05-Jun-2021 09:35:02.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+05-Jun-2021 09:35:02.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+05-Jun-2021 09:35:02.927 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.10+9-Ubuntu-0ubuntu1.18.04
+05-Jun-2021 09:35:02.928 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+05-Jun-2021 09:35:02.928 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 09:35:02.928 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 09:35:02.950 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+05-Jun-2021 09:35:02.950 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+05-Jun-2021 09:35:02.951 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+05-Jun-2021 09:35:02.951 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+05-Jun-2021 09:35:02.951 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+05-Jun-2021 09:35:02.951 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/shweta/apache-tomcat-9.0.43/conf/logging.properties
+05-Jun-2021 09:35:02.951 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Jun-2021 09:35:02.952 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+05-Jun-2021 09:35:02.952 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-Jun-2021 09:35:02.952 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+05-Jun-2021 09:35:02.952 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+05-Jun-2021 09:35:02.952 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 09:35:02.953 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 09:35:02.953 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/shweta/apache-tomcat-9.0.43/temp
+05-Jun-2021 09:35:02.955 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+05-Jun-2021 09:35:03.619 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 09:35:03.666 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1090] milliseconds
+05-Jun-2021 09:35:03.757 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+05-Jun-2021 09:35:03.757 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.43]
+05-Jun-2021 09:35:03.769 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/ROOT]
+05-Jun-2021 09:35:04.427 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 09:35:04.481 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/ROOT] has finished in [711] ms
+05-Jun-2021 09:35:04.481 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/manager]
+05-Jun-2021 09:35:04.691 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 09:35:04.702 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/manager] has finished in [220] ms
+05-Jun-2021 09:35:04.702 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/docs]
+05-Jun-2021 09:35:04.859 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 09:35:04.862 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/docs] has finished in [159] ms
+05-Jun-2021 09:35:04.863 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/host-manager]
+05-Jun-2021 09:35:05.011 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 09:35:05.014 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/host-manager] has finished in [151] ms
+05-Jun-2021 09:35:05.014 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/examples]
+05-Jun-2021 09:35:05.375 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 09:35:05.405 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/examples] has finished in [390] ms
+05-Jun-2021 09:35:05.405 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/EggSupplier]
+05-Jun-2021 09:35:05.583 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 09:35:05.599 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/EggSupplier] has finished in [194] ms
+05-Jun-2021 09:35:05.607 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 09:35:05.618 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1951] milliseconds
+05-Jun-2021 11:16:11.580 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+05-Jun-2021 11:16:11.599 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 11:16:11.607 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+05-Jun-2021 11:16:11.685 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 11:16:11.717 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 12:05:07.152 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.43
+05-Jun-2021 12:05:07.156 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 28 2021 20:25:45 UTC
+05-Jun-2021 12:05:07.157 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.43.0
+05-Jun-2021 12:05:07.157 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+05-Jun-2021 12:05:07.157 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-72-generic
+05-Jun-2021 12:05:07.157 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+05-Jun-2021 12:05:07.157 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+05-Jun-2021 12:05:07.158 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.10+9-Ubuntu-0ubuntu1.18.04
+05-Jun-2021 12:05:07.158 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+05-Jun-2021 12:05:07.158 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 12:05:07.158 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 12:05:07.192 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+05-Jun-2021 12:05:07.193 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+05-Jun-2021 12:05:07.193 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+05-Jun-2021 12:05:07.194 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+05-Jun-2021 12:05:07.194 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+05-Jun-2021 12:05:07.194 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/shweta/apache-tomcat-9.0.43/conf/logging.properties
+05-Jun-2021 12:05:07.194 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Jun-2021 12:05:07.194 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+05-Jun-2021 12:05:07.194 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-Jun-2021 12:05:07.194 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+05-Jun-2021 12:05:07.195 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+05-Jun-2021 12:05:07.195 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 12:05:07.195 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 12:05:07.195 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/shweta/apache-tomcat-9.0.43/temp
+05-Jun-2021 12:05:07.197 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+05-Jun-2021 12:05:07.693 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 12:05:07.732 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [865] milliseconds
+05-Jun-2021 12:05:07.895 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+05-Jun-2021 12:05:07.895 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.43]
+05-Jun-2021 12:05:07.907 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/ROOT]
+05-Jun-2021 12:05:08.416 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 12:05:08.459 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/ROOT] has finished in [551] ms
+05-Jun-2021 12:05:08.459 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/manager]
+05-Jun-2021 12:05:08.643 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 12:05:08.653 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/manager] has finished in [194] ms
+05-Jun-2021 12:05:08.654 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/docs]
+05-Jun-2021 12:05:08.767 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 12:05:08.769 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/docs] has finished in [115] ms
+05-Jun-2021 12:05:08.770 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/host-manager]
+05-Jun-2021 12:05:08.906 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 12:05:08.909 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/host-manager] has finished in [140] ms
+05-Jun-2021 12:05:08.910 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/examples]
+05-Jun-2021 12:05:09.770 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 12:05:09.870 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/examples] has finished in [960] ms
+05-Jun-2021 12:05:09.870 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/EggSupplier]
+05-Jun-2021 12:05:10.049 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 12:05:10.058 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/EggSupplier] has finished in [188] ms
+05-Jun-2021 12:05:10.067 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 12:05:10.079 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2346] milliseconds
+05-Jun-2021 13:40:32.682 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+05-Jun-2021 13:40:32.707 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 13:40:32.720 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+05-Jun-2021 13:40:32.855 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 13:40:32.883 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 13:58:00.852 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.43
+05-Jun-2021 13:58:00.856 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 28 2021 20:25:45 UTC
+05-Jun-2021 13:58:00.856 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.43.0
+05-Jun-2021 13:58:00.856 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+05-Jun-2021 13:58:00.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-72-generic
+05-Jun-2021 13:58:00.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+05-Jun-2021 13:58:00.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+05-Jun-2021 13:58:00.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.10+9-Ubuntu-0ubuntu1.18.04
+05-Jun-2021 13:58:00.858 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+05-Jun-2021 13:58:00.858 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 13:58:00.858 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 13:58:00.873 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+05-Jun-2021 13:58:00.873 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+05-Jun-2021 13:58:00.873 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+05-Jun-2021 13:58:00.874 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+05-Jun-2021 13:58:00.874 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+05-Jun-2021 13:58:00.874 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/shweta/apache-tomcat-9.0.43/conf/logging.properties
+05-Jun-2021 13:58:00.874 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Jun-2021 13:58:00.874 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+05-Jun-2021 13:58:00.875 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-Jun-2021 13:58:00.875 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+05-Jun-2021 13:58:00.875 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+05-Jun-2021 13:58:00.875 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 13:58:00.875 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 13:58:00.876 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/shweta/apache-tomcat-9.0.43/temp
+05-Jun-2021 13:58:00.878 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+05-Jun-2021 13:58:01.411 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 13:58:01.451 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [938] milliseconds
+05-Jun-2021 13:58:01.636 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+05-Jun-2021 13:58:01.637 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.43]
+05-Jun-2021 13:58:01.658 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/ROOT]
+05-Jun-2021 13:58:02.298 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 13:58:02.445 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/ROOT] has finished in [685] ms
+05-Jun-2021 13:58:02.445 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/manager]
+05-Jun-2021 13:58:02.795 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 13:58:02.816 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/manager] has finished in [371] ms
+05-Jun-2021 13:58:02.816 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/docs]
+05-Jun-2021 13:58:02.954 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 13:58:02.957 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/docs] has finished in [141] ms
+05-Jun-2021 13:58:02.957 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/host-manager]
+05-Jun-2021 13:58:03.162 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 13:58:03.166 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/host-manager] has finished in [208] ms
+05-Jun-2021 13:58:03.166 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/examples]
+05-Jun-2021 13:58:04.058 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 13:58:04.077 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/examples] has finished in [911] ms
+05-Jun-2021 13:58:04.078 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/EggSupplier]
+05-Jun-2021 13:58:04.226 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 13:58:04.250 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/EggSupplier] has finished in [171] ms
+05-Jun-2021 13:58:04.264 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 13:58:04.281 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2829] milliseconds
+05-Jun-2021 14:00:03.516 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+05-Jun-2021 14:00:03.517 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 14:00:03.525 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+05-Jun-2021 14:00:03.566 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 14:00:03.575 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 19:41:44.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.43
+05-Jun-2021 19:41:44.486 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 28 2021 20:25:45 UTC
+05-Jun-2021 19:41:44.486 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.43.0
+05-Jun-2021 19:41:44.486 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+05-Jun-2021 19:41:44.486 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-72-generic
+05-Jun-2021 19:41:44.486 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+05-Jun-2021 19:41:44.487 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+05-Jun-2021 19:41:44.487 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.10+9-Ubuntu-0ubuntu1.18.04
+05-Jun-2021 19:41:44.487 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+05-Jun-2021 19:41:44.487 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 19:41:44.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 19:41:44.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+05-Jun-2021 19:41:44.519 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+05-Jun-2021 19:41:44.519 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+05-Jun-2021 19:41:44.519 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+05-Jun-2021 19:41:44.520 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+05-Jun-2021 19:41:44.520 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/shweta/apache-tomcat-9.0.43/conf/logging.properties
+05-Jun-2021 19:41:44.520 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Jun-2021 19:41:44.520 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+05-Jun-2021 19:41:44.520 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-Jun-2021 19:41:44.521 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+05-Jun-2021 19:41:44.521 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+05-Jun-2021 19:41:44.521 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 19:41:44.521 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 19:41:44.521 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/shweta/apache-tomcat-9.0.43/temp
+05-Jun-2021 19:41:44.556 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+05-Jun-2021 19:41:45.195 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 19:41:45.236 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1159] milliseconds
+05-Jun-2021 19:41:45.337 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+05-Jun-2021 19:41:45.337 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.43]
+05-Jun-2021 19:41:45.349 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/ROOT]
+05-Jun-2021 19:41:45.930 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 19:41:45.977 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/ROOT] has finished in [628] ms
+05-Jun-2021 19:41:45.978 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/manager]
+05-Jun-2021 19:41:46.155 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 19:41:46.164 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/manager] has finished in [186] ms
+05-Jun-2021 19:41:46.165 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/docs]
+05-Jun-2021 19:41:46.299 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 19:41:46.302 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/docs] has finished in [137] ms
+05-Jun-2021 19:41:46.302 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/host-manager]
+05-Jun-2021 19:41:46.470 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 19:41:46.473 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/host-manager] has finished in [171] ms
+05-Jun-2021 19:41:46.473 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/examples]
+05-Jun-2021 19:41:47.287 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 19:41:47.309 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/examples] has finished in [835] ms
+05-Jun-2021 19:41:47.309 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/EggSupplier]
+05-Jun-2021 19:41:47.501 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 19:41:47.510 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/EggSupplier] has finished in [201] ms
+05-Jun-2021 19:41:47.516 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 19:41:47.533 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2296] milliseconds
+05-Jun-2021 20:38:29.557 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/Servlet&JSP]
+05-Jun-2021 20:38:30.137 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 20:38:30.140 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/Servlet&JSP] has finished in [583] ms
+05-Jun-2021 20:39:50.163 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Reloading context [/EggSupplier]
+05-Jun-2021 20:39:50.163 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/EggSupplier] has started
+05-Jun-2021 20:39:50.526 INFO [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 20:39:50.564 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/EggSupplier] is completed
+05-Jun-2021 22:42:40.978 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+05-Jun-2021 22:42:40.978 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 22:42:40.986 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+05-Jun-2021 22:42:41.076 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 22:42:41.098 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 22:43:02.839 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.43
+05-Jun-2021 22:43:02.845 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 28 2021 20:25:45 UTC
+05-Jun-2021 22:43:02.845 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.43.0
+05-Jun-2021 22:43:02.845 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+05-Jun-2021 22:43:02.845 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-72-generic
+05-Jun-2021 22:43:02.845 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+05-Jun-2021 22:43:02.846 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+05-Jun-2021 22:43:02.846 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.10+9-Ubuntu-0ubuntu1.18.04
+05-Jun-2021 22:43:02.846 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+05-Jun-2021 22:43:02.846 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 22:43:02.847 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 22:43:02.897 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+05-Jun-2021 22:43:02.897 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+05-Jun-2021 22:43:02.897 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+05-Jun-2021 22:43:02.898 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+05-Jun-2021 22:43:02.898 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+05-Jun-2021 22:43:02.898 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/shweta/apache-tomcat-9.0.43/conf/logging.properties
+05-Jun-2021 22:43:02.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Jun-2021 22:43:02.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+05-Jun-2021 22:43:02.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-Jun-2021 22:43:02.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+05-Jun-2021 22:43:02.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+05-Jun-2021 22:43:02.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 22:43:02.900 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/shweta/apache-tomcat-9.0.43
+05-Jun-2021 22:43:02.900 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/shweta/apache-tomcat-9.0.43/temp
+05-Jun-2021 22:43:02.914 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+05-Jun-2021 22:43:03.655 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 22:43:03.706 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1284] milliseconds
+05-Jun-2021 22:43:03.827 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+05-Jun-2021 22:43:03.828 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.43]
+05-Jun-2021 22:43:03.845 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/ROOT]
+05-Jun-2021 22:43:04.434 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 22:43:04.540 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/ROOT] has finished in [694] ms
+05-Jun-2021 22:43:04.541 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/manager]
+05-Jun-2021 22:43:04.756 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 22:43:04.776 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/manager] has finished in [235] ms
+05-Jun-2021 22:43:04.776 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/docs]
+05-Jun-2021 22:43:04.911 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 22:43:04.915 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/docs] has finished in [138] ms
+05-Jun-2021 22:43:04.915 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/host-manager]
+05-Jun-2021 22:43:05.101 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 22:43:05.104 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/host-manager] has finished in [189] ms
+05-Jun-2021 22:43:05.105 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/examples]
+05-Jun-2021 22:43:06.074 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 22:43:06.102 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/examples] has finished in [996] ms
+05-Jun-2021 22:43:06.102 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/Servlet&JSP]
+05-Jun-2021 22:43:06.249 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 22:43:06.287 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/Servlet&JSP] has finished in [184] ms
+05-Jun-2021 22:43:06.287 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/EggSupplier]
+05-Jun-2021 22:43:06.429 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+05-Jun-2021 22:43:06.432 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/shweta/apache-tomcat-9.0.43/webapps/EggSupplier] has finished in [145] ms
+05-Jun-2021 22:43:06.446 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 22:43:06.471 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2764] milliseconds
+05-Jun-2021 22:45:35.766 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+05-Jun-2021 22:45:35.767 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 22:45:35.775 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+05-Jun-2021 22:45:35.839 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+05-Jun-2021 22:45:35.874 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]

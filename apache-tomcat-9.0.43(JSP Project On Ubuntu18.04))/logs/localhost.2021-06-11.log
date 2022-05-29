@@ -1,0 +1,1874 @@
+11-Jun-2021 11:20:42.137 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+11-Jun-2021 11:20:42.138 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+11-Jun-2021 11:20:42.139 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@37637a24')
+11-Jun-2021 12:34:14.288 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [53] in the jsp file: [/custdebit.jsp]
+t1 cannot be resolved to a variable
+50:          String date=request.getParameter("t3");
+51:          String cvv=request.getParameter("t4");
+52: 
+53:      if(t1!=null&&t2!=null&&t3!=null&&t4!=null)
+54:      {
+55:          Class.forName("org.postgresql.Driver");
+56:          Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");                                                                 
+
+
+An error occurred at line: [53] in the jsp file: [/custdebit.jsp]
+t2 cannot be resolved to a variable
+50:          String date=request.getParameter("t3");
+51:          String cvv=request.getParameter("t4");
+52: 
+53:      if(t1!=null&&t2!=null&&t3!=null&&t4!=null)
+54:      {
+55:          Class.forName("org.postgresql.Driver");
+56:          Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");                                                                 
+
+
+An error occurred at line: [53] in the jsp file: [/custdebit.jsp]
+t3 cannot be resolved to a variable
+50:          String date=request.getParameter("t3");
+51:          String cvv=request.getParameter("t4");
+52: 
+53:      if(t1!=null&&t2!=null&&t3!=null&&t4!=null)
+54:      {
+55:          Class.forName("org.postgresql.Driver");
+56:          Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");                                                                 
+
+
+An error occurred at line: [53] in the jsp file: [/custdebit.jsp]
+t4 cannot be resolved to a variable
+50:          String date=request.getParameter("t3");
+51:          String cvv=request.getParameter("t4");
+52: 
+53:      if(t1!=null&&t2!=null&&t3!=null&&t4!=null)
+54:      {
+55:          Class.forName("org.postgresql.Driver");
+56:          Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");                                                                 
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [53] in the jsp file: [/custdebit.jsp]
+t1 cannot be resolved to a variable
+50:          String date=request.getParameter("t3");
+51:          String cvv=request.getParameter("t4");
+52: 
+53:      if(t1!=null&&t2!=null&&t3!=null&&t4!=null)
+54:      {
+55:          Class.forName("org.postgresql.Driver");
+56:          Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");                                                                 
+
+
+An error occurred at line: [53] in the jsp file: [/custdebit.jsp]
+t2 cannot be resolved to a variable
+50:          String date=request.getParameter("t3");
+51:          String cvv=request.getParameter("t4");
+52: 
+53:      if(t1!=null&&t2!=null&&t3!=null&&t4!=null)
+54:      {
+55:          Class.forName("org.postgresql.Driver");
+56:          Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");                                                                 
+
+
+An error occurred at line: [53] in the jsp file: [/custdebit.jsp]
+t3 cannot be resolved to a variable
+50:          String date=request.getParameter("t3");
+51:          String cvv=request.getParameter("t4");
+52: 
+53:      if(t1!=null&&t2!=null&&t3!=null&&t4!=null)
+54:      {
+55:          Class.forName("org.postgresql.Driver");
+56:          Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");                                                                 
+
+
+An error occurred at line: [53] in the jsp file: [/custdebit.jsp]
+t4 cannot be resolved to a variable
+50:          String date=request.getParameter("t3");
+51:          String cvv=request.getParameter("t4");
+52: 
+53:      if(t1!=null&&t2!=null&&t3!=null&&t4!=null)
+54:      {
+55:          Class.forName("org.postgresql.Driver");
+56:          Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");                                                                 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+11-Jun-2021 12:39:16.300 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [An exception occurred processing [/custdebit.jsp] at line [26]
+
+23:         <tr><td colspan="2" align="center"><font color="#f6a00b" face="arial" size="5"> 
+24:           <%
+25:              hs=request.getSession(true);
+26:              tot=(float)hs.getAttribute("total");
+27:              out.print("Total Bill ₹"+tot);
+28:           %> </font></tr>
+29:          <tr>
+
+
+Stacktrace:] with root cause
+	java.lang.NullPointerException
+		at org.apache.jsp.custdebit_jsp._jspService(custdebit_jsp.java:153)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+11-Jun-2021 12:42:37.179 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [An exception occurred processing [/paymentsuccess.jsp] at line [14]
+
+11:     <font color="#eee6e2" size="6" face="arial">
+12:     <br>Payment Successful<br>
+13:     <%  HttpSession hs=request.getSession(true); 
+14:            out.print("₹"+(int)hs.getAttribute("total")+"0");
+15:     %>
+16:     </font>    
+17:    </center>
+
+
+Stacktrace:] with root cause
+	java.lang.ClassCastException: class java.lang.Float cannot be cast to class java.lang.Integer (java.lang.Float and java.lang.Integer are in module java.base of loader 'bootstrap')
+		at org.apache.jsp.paymentsuccess_jsp._jspService(paymentsuccess_jsp.java:130)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+11-Jun-2021 14:34:30.877 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [An exception occurred processing [/paymentsuccess.jsp] at line [14]
+
+11:     <font color="#eee6e2" size="6" face="arial">
+12:     <br>Payment Successful<br>
+13:     <%  HttpSession hs=request.getSession(true); 
+14:            out.print("₹"+(float)hs.getAttribute("total")+"0");
+15:     %>
+16:     </font> 
+17:     <form action="custpage.jsp">
+
+
+Stacktrace:] with root cause
+	java.lang.NullPointerException
+		at org.apache.jsp.paymentsuccess_jsp._jspService(paymentsuccess_jsp.java:130)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+11-Jun-2021 14:34:42.498 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [An exception occurred processing [/custdebit.jsp] at line [26]
+
+23:         <tr><td colspan="2" align="center"><font color="#f6a00b" face="arial" size="5"> 
+24:           <%
+25:              hs=request.getSession(true);
+26:              tot=(float)hs.getAttribute("total");
+27:              out.print("Total Bill ₹"+tot);
+28:           %> </font></tr>
+29:          <tr>
+
+
+Stacktrace:] with root cause
+	java.lang.NullPointerException
+		at org.apache.jsp.custdebit_jsp._jspService(custdebit_jsp.java:153)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+11-Jun-2021 14:36:31.976 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [An exception occurred processing [/paymentfailed.jsp] at line [14]
+
+11:     <font color="#eee6e2" size="6" face="arial">
+12:     <br>Payment Failed<br>
+13: <!--    <%  HttpSession hs=request.getSession(true); 
+14:            out.print("₹"+(float)hs.getAttribute("total")+"0");
+15:     %>
+16: -->
+17:     </font> 
+
+
+Stacktrace:] with root cause
+	java.lang.NullPointerException
+		at org.apache.jsp.paymentfailed_jsp._jspService(paymentfailed_jsp.java:130)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+11-Jun-2021 15:38:38.979 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [An exception occurred processing [/custupi.jsp] at line [31]
+
+28:            <td colspan="2" align="center"><input type="text" name="t1" placeholder="example@upi">
+29:          </tr>
+30:           <tr><td colspan="2" align="center"><input type="submit"
+31:           value='<% hs=request.getSession(true); tot=(float)hs.getAttribute("total"); out.print("Pay ₹"+tot);%>'></tr>
+32:       </table>
+33:   </form>
+34: <!-- ty=# alter table payment alter column pid type bigint;
+
+
+Stacktrace:] with root cause
+	java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Float (java.lang.String and java.lang.Float are in module java.base of loader 'bootstrap')
+		at org.apache.jsp.custupi_jsp._jspService(custupi_jsp.java:158)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+11-Jun-2021 15:53:20.574 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [An exception occurred processing [/custupi.jsp] at line [31]
+
+28:            <td colspan="2" align="center"><input type="text" name="t1" placeholder="example@upi">
+29:          </tr>
+30:           <tr><td colspan="2" align="center"><input type="submit"
+31:           value='<% hs=request.getSession(true); tot=(float)hs.getAttribute("total"); out.print("Pay ₹"+tot+"0");%>'></tr>
+32:       </table>
+33:   </form>
+34: <!-- ty=# alter table payment alter column pid type bigint;
+
+
+Stacktrace:] with root cause
+	java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Float (java.lang.String and java.lang.Float are in module java.base of loader 'bootstrap')
+		at org.apache.jsp.custupi_jsp._jspService(custupi_jsp.java:158)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+11-Jun-2021 15:55:20.569 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [An exception occurred processing [/custupi.jsp] at line [31]
+
+28:            <td colspan="2" align="center"><input type="text" name="t1" placeholder="example@upi">
+29:          </tr>
+30:           <tr><td colspan="2" align="center"><input type="submit"
+31:           value='<% hs=request.getSession(true); tot=(float)hs.getAttribute("total"); out.print("Pay ₹"+tot+"0"); %>'></tr>
+32:       </table>
+33:   </form>
+34: <!-- ty=# alter table payment alter column pid type bigint;
+
+
+Stacktrace:] with root cause
+	java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Float (java.lang.String and java.lang.Float are in module java.base of loader 'bootstrap')
+		at org.apache.jsp.custupi_jsp._jspService(custupi_jsp.java:158)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+11-Jun-2021 15:57:55.898 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [An exception occurred processing [/custupi.jsp] at line [31]
+
+28:            <td colspan="2" align="center"><input type="text" name="t1" placeholder="example@upi">
+29:          </tr>
+30:           <tr><td colspan="2" align="center"><input type="submit"
+31:           value='<% hs=request.getSession(true); tot=(float)hs.getAttribute("total"); out.print("Pay ₹"+tot+"0"); %>'></tr>
+32:       </table>
+33:   </form>
+34: <!-- ty=# alter table payment alter column pid type bigint;
+
+
+Stacktrace:] with root cause
+	java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Float (java.lang.String and java.lang.Float are in module java.base of loader 'bootstrap')
+		at org.apache.jsp.custupi_jsp._jspService(custupi_jsp.java:158)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+11-Jun-2021 15:58:56.670 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [An exception occurred processing [/custupi.jsp] at line [31]
+
+28:            <td colspan="2" align="center"><input type="text" name="t1" placeholder="example@upi">
+29:          </tr>
+30:           <tr><td colspan="2" align="center"><input type="submit"
+31:           value='<% hs=request.getSession(true); tot=(float)hs.getAttribute("total"); out.print("Pay ₹"+tot+"0"); %>'></tr>
+32:       </table>
+33:   </form>
+34: <!-- ty=# alter table payment alter column pid type bigint;
+
+
+Stacktrace:] with root cause
+	java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Float (java.lang.String and java.lang.Float are in module java.base of loader 'bootstrap')
+		at org.apache.jsp.custupi_jsp._jspService(custupi_jsp.java:158)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+11-Jun-2021 15:59:22.160 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [An exception occurred processing [/custupi.jsp] at line [31]
+
+28:            <td colspan="2" align="center"><input type="text" name="t1" placeholder="example@upi">
+29:          </tr>
+30:           <tr><td colspan="2" align="center"><input type="submit"
+31:           value='<% hs=request.getSession(true); tot=(float)hs.getAttribute("total"); out.print("Pay ₹"+tot); %>'></tr>
+32:       </table>
+33:   </form>
+34: <!-- ty=# alter table payment alter column pid type bigint;
+
+
+Stacktrace:] with root cause
+	java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Float (java.lang.String and java.lang.Float are in module java.base of loader 'bootstrap')
+		at org.apache.jsp.custupi_jsp._jspService(custupi_jsp.java:158)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+11-Jun-2021 16:16:38.527 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [19] in the jsp file: [/custcash.jsp]
+The method getSession(boolean) in the type HttpServletRequest is not applicable for the arguments (String)
+16:             Class.forName("org.postgresql.Driver");
+17:             Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");                                                                 
+18:             Statement st=con.createStatement();      
+19:             HttpSession hs=request.getSession("true");
+20:             int oid=(int)hs.getAttribute("oid");
+21:             st.executeUpdate("update orders set payment_status='pay on delivery' where oid="+oid);
+22:       %>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [19] in the jsp file: [/custcash.jsp]
+The method getSession(boolean) in the type HttpServletRequest is not applicable for the arguments (String)
+16:             Class.forName("org.postgresql.Driver");
+17:             Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");                                                                 
+18:             Statement st=con.createStatement();      
+19:             HttpSession hs=request.getSession("true");
+20:             int oid=(int)hs.getAttribute("oid");
+21:             st.executeUpdate("update orders set payment_status='pay on delivery' where oid="+oid);
+22:       %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+11-Jun-2021 16:26:12.740 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [19] in the jsp file: [/custcash.jsp]
+The method getSession(boolean) in the type HttpServletRequest is not applicable for the arguments (String)
+16:             Class.forName("org.postgresql.Driver");
+17:             Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");                                                                 
+18:             Statement st=con.createStatement();      
+19:             HttpSession hs=request.getSession("true");
+20:             int oid=(int)hs.getAttribute("oid");
+21:             st.executeUpdate("update orders set payment_status='pay on delivery' where oid="+oid);
+22:       %>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [19] in the jsp file: [/custcash.jsp]
+The method getSession(boolean) in the type HttpServletRequest is not applicable for the arguments (String)
+16:             Class.forName("org.postgresql.Driver");
+17:             Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");                                                                 
+18:             Statement st=con.createStatement();      
+19:             HttpSession hs=request.getSession("true");
+20:             int oid=(int)hs.getAttribute("oid");
+21:             st.executeUpdate("update orders set payment_status='pay on delivery' where oid="+oid);
+22:       %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+11-Jun-2021 16:53:47.686 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [56] in the jsp file: [/adminpayment.jsp]
+f cannot be resolved to a variable
+53:            out.print("<td>"+rs.getFloat(5)+"0");
+54:            out.print("<td>"+rs.getInt(6));
+55:            out.print("<td>"+rs.getInt(7)+"</tr>");
+56:            f=1;
+57:            }
+58:          out.print("</table>");      
+59:          if(f==0)       
+
+
+An error occurred at line: [59] in the jsp file: [/adminpayment.jsp]
+f cannot be resolved to a variable
+56:            f=1;
+57:            }
+58:          out.print("</table>");      
+59:          if(f==0)       
+60:          out.print("<div style='height: 30vh;'><font class='form'  size='4'><b>No payments yet!</b></font></div>");
+61:        rs.close();
+62:        st.close();
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [56] in the jsp file: [/adminpayment.jsp]
+f cannot be resolved to a variable
+53:            out.print("<td>"+rs.getFloat(5)+"0");
+54:            out.print("<td>"+rs.getInt(6));
+55:            out.print("<td>"+rs.getInt(7)+"</tr>");
+56:            f=1;
+57:            }
+58:          out.print("</table>");      
+59:          if(f==0)       
+
+
+An error occurred at line: [59] in the jsp file: [/adminpayment.jsp]
+f cannot be resolved to a variable
+56:            f=1;
+57:            }
+58:          out.print("</table>");      
+59:          if(f==0)       
+60:          out.print("<div style='height: 30vh;'><font class='form'  size='4'><b>No payments yet!</b></font></div>");
+61:        rs.close();
+62:        st.close();
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+11-Jun-2021 17:42:17.920 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+11-Jun-2021 17:42:17.920 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+11-Jun-2021 17:50:26.701 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+11-Jun-2021 17:50:26.701 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+11-Jun-2021 17:50:26.703 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@63a28987')
+11-Jun-2021 19:47:12.312 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [3] in the jsp file: [/updaterateqty.jsp]
+it cannot be resolved to a variable
+1: <%
+2:   String c[]=request.getParameterValues("c1");
+3:    if(it!=null)
+4:    String t[]=request.getParameterValues("t1");
+5:     for(int i=0;i<c.length;i++)
+6:     out.print("\n"+c[i]);
+
+
+An error occurred at line: [3] in the jsp file: [/updaterateqty.jsp]
+Syntax error on token ")", { expected after this token
+1: <%
+2:   String c[]=request.getParameterValues("c1");
+3:    if(it!=null)
+4:    String t[]=request.getParameterValues("t1");
+5:     for(int i=0;i<c.length;i++)
+6:     out.print("\n"+c[i]);
+
+
+An error occurred at line: [126] in the generated java file: [/home/shweta/apache-tomcat-9.0.43/work/Catalina/localhost/EggSupplier/org/apache/jsp/updaterateqty_jsp.java]
+Syntax error, insert "else Statement" to complete IfStatement
+
+An error occurred at line: [126] in the generated java file: [/home/shweta/apache-tomcat-9.0.43/work/Catalina/localhost/EggSupplier/org/apache/jsp/updaterateqty_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [3] in the jsp file: [/updaterateqty.jsp]
+it cannot be resolved to a variable
+1: <%
+2:   String c[]=request.getParameterValues("c1");
+3:    if(it!=null)
+4:    String t[]=request.getParameterValues("t1");
+5:     for(int i=0;i<c.length;i++)
+6:     out.print("\n"+c[i]);
+
+
+An error occurred at line: [3] in the jsp file: [/updaterateqty.jsp]
+Syntax error on token ")", { expected after this token
+1: <%
+2:   String c[]=request.getParameterValues("c1");
+3:    if(it!=null)
+4:    String t[]=request.getParameterValues("t1");
+5:     for(int i=0;i<c.length;i++)
+6:     out.print("\n"+c[i]);
+
+
+An error occurred at line: [126] in the generated java file: [/home/shweta/apache-tomcat-9.0.43/work/Catalina/localhost/EggSupplier/org/apache/jsp/updaterateqty_jsp.java]
+Syntax error, insert "else Statement" to complete IfStatement
+
+An error occurred at line: [126] in the generated java file: [/home/shweta/apache-tomcat-9.0.43/work/Catalina/localhost/EggSupplier/org/apache/jsp/updaterateqty_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+11-Jun-2021 19:50:30.554 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unsupported encoding: [UTF]] with root cause
+	org.apache.jasper.JasperException: Unsupported encoding: [UTF]
+		at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:55)
+		at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:294)
+		at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:81)
+		at org.apache.jasper.compiler.JspUtil.getReader(JspUtil.java:878)
+		at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:240)
+		at org.apache.jasper.compiler.ParserController.parseDirectives(ParserController.java:127)
+		at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:202)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:386)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+11-Jun-2021 19:52:17.503 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [86] in the jsp file: [/adminegg.jsp]
+Syntax error on tokens, delete these tokens
+83:       Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");
+84:       Statement st=con.createStatement();
+85:       ResultSet rs=st.executeQuery("select * from egg1");
+86:       out.print("<form method="post" action="updaterateqty.jsp">");
+87:       out.print("<table cellspacing='0' width='600'>");
+88:       out.print("<caption><b>Egg Information<b></caption>");
+89:       out.print("<tr bgcolor='#f6a00b'><th>Type</th> <th>Rate</th><th>Quantity Available</th></tr>");      
+
+
+An error occurred at line: [86] in the jsp file: [/adminegg.jsp]
+updaterateqty.jsp cannot be resolved to a type
+83:       Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");
+84:       Statement st=con.createStatement();
+85:       ResultSet rs=st.executeQuery("select * from egg1");
+86:       out.print("<form method="post" action="updaterateqty.jsp">");
+87:       out.print("<table cellspacing='0' width='600'>");
+88:       out.print("<caption><b>Egg Information<b></caption>");
+89:       out.print("<tr bgcolor='#f6a00b'><th>Type</th> <th>Rate</th><th>Quantity Available</th></tr>");      
+
+
+An error occurred at line: [86] in the jsp file: [/adminegg.jsp]
+Syntax error on token "">"", delete this token
+83:       Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");
+84:       Statement st=con.createStatement();
+85:       ResultSet rs=st.executeQuery("select * from egg1");
+86:       out.print("<form method="post" action="updaterateqty.jsp">");
+87:       out.print("<table cellspacing='0' width='600'>");
+88:       out.print("<caption><b>Egg Information<b></caption>");
+89:       out.print("<tr bgcolor='#f6a00b'><th>Type</th> <th>Rate</th><th>Quantity Available</th></tr>");      
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [86] in the jsp file: [/adminegg.jsp]
+Syntax error on tokens, delete these tokens
+83:       Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");
+84:       Statement st=con.createStatement();
+85:       ResultSet rs=st.executeQuery("select * from egg1");
+86:       out.print("<form method="post" action="updaterateqty.jsp">");
+87:       out.print("<table cellspacing='0' width='600'>");
+88:       out.print("<caption><b>Egg Information<b></caption>");
+89:       out.print("<tr bgcolor='#f6a00b'><th>Type</th> <th>Rate</th><th>Quantity Available</th></tr>");      
+
+
+An error occurred at line: [86] in the jsp file: [/adminegg.jsp]
+updaterateqty.jsp cannot be resolved to a type
+83:       Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");
+84:       Statement st=con.createStatement();
+85:       ResultSet rs=st.executeQuery("select * from egg1");
+86:       out.print("<form method="post" action="updaterateqty.jsp">");
+87:       out.print("<table cellspacing='0' width='600'>");
+88:       out.print("<caption><b>Egg Information<b></caption>");
+89:       out.print("<tr bgcolor='#f6a00b'><th>Type</th> <th>Rate</th><th>Quantity Available</th></tr>");      
+
+
+An error occurred at line: [86] in the jsp file: [/adminegg.jsp]
+Syntax error on token "">"", delete this token
+83:       Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");
+84:       Statement st=con.createStatement();
+85:       ResultSet rs=st.executeQuery("select * from egg1");
+86:       out.print("<form method="post" action="updaterateqty.jsp">");
+87:       out.print("<table cellspacing='0' width='600'>");
+88:       out.print("<caption><b>Egg Information<b></caption>");
+89:       out.print("<tr bgcolor='#f6a00b'><th>Type</th> <th>Rate</th><th>Quantity Available</th></tr>");      
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+11-Jun-2021 20:14:00.915 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [12] in the jsp file: [/updaterateqty.jsp]
+Type mismatch: cannot convert from int to ResultSet
+9:       if(c.equals("on"))
+10:       {
+11:       float t1=Float.parseFloat(request.getParameter("t1"));
+12:       rs=st.executeUpdate("update egg1 set rate="+t1+" where type='country'");         
+13:       }  
+14:       c=request.getParameter("c2");
+15:       if(c.equals("on"))
+
+
+An error occurred at line: [18] in the jsp file: [/updaterateqty.jsp]
+Type mismatch: cannot convert from int to ResultSet
+15:       if(c.equals("on"))
+16:       {
+17:       int t2=Integer.parseInt(request.getParameter("t2"));
+18:       rs=st.executeUpdate("update egg1 set qty="+t2+" where type='country'");         
+19:       }  
+20: %>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [12] in the jsp file: [/updaterateqty.jsp]
+Type mismatch: cannot convert from int to ResultSet
+9:       if(c.equals("on"))
+10:       {
+11:       float t1=Float.parseFloat(request.getParameter("t1"));
+12:       rs=st.executeUpdate("update egg1 set rate="+t1+" where type='country'");         
+13:       }  
+14:       c=request.getParameter("c2");
+15:       if(c.equals("on"))
+
+
+An error occurred at line: [18] in the jsp file: [/updaterateqty.jsp]
+Type mismatch: cannot convert from int to ResultSet
+15:       if(c.equals("on"))
+16:       {
+17:       int t2=Integer.parseInt(request.getParameter("t2"));
+18:       rs=st.executeUpdate("update egg1 set qty="+t2+" where type='country'");         
+19:       }  
+20: %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+11-Jun-2021 20:14:38.728 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [An exception occurred processing [/updaterateqty.jsp] at line [14]
+
+11:       st.executeUpdate("update egg1 set rate="+t1+" where type='country'");         
+12:       }  
+13:       c=request.getParameter("c2");
+14:       if(c.equals("on"))
+15:       {
+16:       int t2=Integer.parseInt(request.getParameter("t2"));
+17:       st.executeUpdate("update egg1 set qty="+t2+" where type='country'");         
+
+
+Stacktrace:] with root cause
+	java.lang.NullPointerException
+		at org.apache.jsp.updaterateqty_jsp._jspService(updaterateqty_jsp.java:131)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+11-Jun-2021 23:31:20.730 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the generated java file: [/home/shweta/apache-tomcat-9.0.43/work/Catalina/localhost/EggSupplier/org/apache/jsp/paymentsuccess_jsp.java]
+Syntax error on token "true", invalid Name
+
+An error occurred at line: [41] in the jsp file: [/paymentsuccess.jsp]
+Connection cannot be resolved to a type
+38:      <tr><td>Details of your transaction are given below</tr>
+39:     <%
+40:          Class.forName("org.postgresql.Driver");
+41:          Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");                                                                 
+42:          Statement st=con.createStatement();      
+43:          String S=(String)hs.getAttribute("user");
+44:          int oid=(int)hs.getAttribute("oid");
+
+
+An error occurred at line: [41] in the jsp file: [/paymentsuccess.jsp]
+DriverManager cannot be resolved
+38:      <tr><td>Details of your transaction are given below</tr>
+39:     <%
+40:          Class.forName("org.postgresql.Driver");
+41:          Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");                                                                 
+42:          Statement st=con.createStatement();      
+43:          String S=(String)hs.getAttribute("user");
+44:          int oid=(int)hs.getAttribute("oid");
+
+
+An error occurred at line: [42] in the jsp file: [/paymentsuccess.jsp]
+Statement cannot be resolved to a type
+39:     <%
+40:          Class.forName("org.postgresql.Driver");
+41:          Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");                                                                 
+42:          Statement st=con.createStatement();      
+43:          String S=(String)hs.getAttribute("user");
+44:          int oid=(int)hs.getAttribute("oid");
+45:          ResultSet rs;
+
+
+An error occurred at line: [45] in the jsp file: [/paymentsuccess.jsp]
+ResultSet cannot be resolved to a type
+42:          Statement st=con.createStatement();      
+43:          String S=(String)hs.getAttribute("user");
+44:          int oid=(int)hs.getAttribute("oid");
+45:          ResultSet rs;
+46:          rs=st.executeQuery("select otype from order where oid="+oid);
+47:          String type;
+48:          float rate;
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [14] in the generated java file: [/home/shweta/apache-tomcat-9.0.43/work/Catalina/localhost/EggSupplier/org/apache/jsp/paymentsuccess_jsp.java]
+Syntax error on token "true", invalid Name
+
+An error occurred at line: [41] in the jsp file: [/paymentsuccess.jsp]
+Connection cannot be resolved to a type
+38:      <tr><td>Details of your transaction are given below</tr>
+39:     <%
+40:          Class.forName("org.postgresql.Driver");
+41:          Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");                                                                 
+42:          Statement st=con.createStatement();      
+43:          String S=(String)hs.getAttribute("user");
+44:          int oid=(int)hs.getAttribute("oid");
+
+
+An error occurred at line: [41] in the jsp file: [/paymentsuccess.jsp]
+DriverManager cannot be resolved
+38:      <tr><td>Details of your transaction are given below</tr>
+39:     <%
+40:          Class.forName("org.postgresql.Driver");
+41:          Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");                                                                 
+42:          Statement st=con.createStatement();      
+43:          String S=(String)hs.getAttribute("user");
+44:          int oid=(int)hs.getAttribute("oid");
+
+
+An error occurred at line: [42] in the jsp file: [/paymentsuccess.jsp]
+Statement cannot be resolved to a type
+39:     <%
+40:          Class.forName("org.postgresql.Driver");
+41:          Connection con=DriverManager.getConnection("jdbc:postgresql://localhost/ty","postgres","qwertyuiop");                                                                 
+42:          Statement st=con.createStatement();      
+43:          String S=(String)hs.getAttribute("user");
+44:          int oid=(int)hs.getAttribute("oid");
+45:          ResultSet rs;
+
+
+An error occurred at line: [45] in the jsp file: [/paymentsuccess.jsp]
+ResultSet cannot be resolved to a type
+42:          Statement st=con.createStatement();      
+43:          String S=(String)hs.getAttribute("user");
+44:          int oid=(int)hs.getAttribute("oid");
+45:          ResultSet rs;
+46:          rs=st.executeQuery("select otype from order where oid="+oid);
+47:          String type;
+48:          float rate;
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+11-Jun-2021 23:32:24.827 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [51] in the jsp file: [/paymentsuccess.jsp]
+The method executeQuery(String) is undefined for the type ResultSet
+48:          float rate;
+49:          if(rs.next())
+50:          type=rs.getString(1);
+51:          rs.executeQuery("select rate from egg1 where type="+type);
+52:          if(rs.next())
+53:          rate=rs.getInt(1);
+54:          long pid=(long)hs.getAttribute("pid");
+
+
+An error occurred at line: [55] in the jsp file: [/paymentsuccess.jsp]
+The method executeQuery(String) is undefined for the type ResultSet
+52:          if(rs.next())
+53:          rate=rs.getInt(1);
+54:          long pid=(long)hs.getAttribute("pid");
+55:          rs.executeQuery("select pamount,pdate,ptime,ptype from egg1 where type="+type);
+56:          String pamount,pdate,ptime,ptype;
+57:          if(rs.next())
+58:          {
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [51] in the jsp file: [/paymentsuccess.jsp]
+The method executeQuery(String) is undefined for the type ResultSet
+48:          float rate;
+49:          if(rs.next())
+50:          type=rs.getString(1);
+51:          rs.executeQuery("select rate from egg1 where type="+type);
+52:          if(rs.next())
+53:          rate=rs.getInt(1);
+54:          long pid=(long)hs.getAttribute("pid");
+
+
+An error occurred at line: [55] in the jsp file: [/paymentsuccess.jsp]
+The method executeQuery(String) is undefined for the type ResultSet
+52:          if(rs.next())
+53:          rate=rs.getInt(1);
+54:          long pid=(long)hs.getAttribute("pid");
+55:          rs.executeQuery("select pamount,pdate,ptime,ptype from egg1 where type="+type);
+56:          String pamount,pdate,ptime,ptype;
+57:          if(rs.next())
+58:          {
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+11-Jun-2021 23:33:35.100 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [51] in the jsp file: [/paymentsuccess.jsp]
+The local variable type may not have been initialized
+48:          float rate;
+49:          if(rs.next())
+50:          type=rs.getString(1);
+51:          rs=st.executeQuery("select rate from egg1 where type="+type);
+52:          if(rs.next())
+53:          rate=rs.getInt(1);
+54:          long pid=(long)hs.getAttribute("pid");
+
+
+An error occurred at line: [55] in the jsp file: [/paymentsuccess.jsp]
+The local variable type may not have been initialized
+52:          if(rs.next())
+53:          rate=rs.getInt(1);
+54:          long pid=(long)hs.getAttribute("pid");
+55:          rs=st.executeQuery("select pamount,pdate,ptime,ptype from egg1 where type="+type);
+56:          String pamount,pdate,ptime,ptype;
+57:          if(rs.next())
+58:          {
+
+
+An error occurred at line: [65] in the jsp file: [/paymentsuccess.jsp]
+The local variable type may not have been initialized
+62:            ptype=rs.getString(4);
+63:          }
+64:          out.print("<tr><td>Username<td><b>"+S+"</b></tr>");         
+65:          out.print("<tr><td>Egg Type<td><b>"+type+" Eggs</b></tr>");         
+66:          out.print("<tr><td>Egg Rate<td><b>₹"+rate+"0</b></tr>");         
+67:          out.print("<tr><td>Total Amount<td><b>₹"+pamount+"0</b></tr>");         
+68:          out.print("<tr><td>Date and Time<td><b>"+pdate+"  "+ptime+"</b></tr>");         
+
+
+An error occurred at line: [66] in the jsp file: [/paymentsuccess.jsp]
+The local variable rate may not have been initialized
+63:          }
+64:          out.print("<tr><td>Username<td><b>"+S+"</b></tr>");         
+65:          out.print("<tr><td>Egg Type<td><b>"+type+" Eggs</b></tr>");         
+66:          out.print("<tr><td>Egg Rate<td><b>₹"+rate+"0</b></tr>");         
+67:          out.print("<tr><td>Total Amount<td><b>₹"+pamount+"0</b></tr>");         
+68:          out.print("<tr><td>Date and Time<td><b>"+pdate+"  "+ptime+"</b></tr>");         
+69:          out.print("<tr><td>Payment Type<td><b>"+ptype+"</b></tr>");         
+
+
+An error occurred at line: [67] in the jsp file: [/paymentsuccess.jsp]
+The local variable pamount may not have been initialized
+64:          out.print("<tr><td>Username<td><b>"+S+"</b></tr>");         
+65:          out.print("<tr><td>Egg Type<td><b>"+type+" Eggs</b></tr>");         
+66:          out.print("<tr><td>Egg Rate<td><b>₹"+rate+"0</b></tr>");         
+67:          out.print("<tr><td>Total Amount<td><b>₹"+pamount+"0</b></tr>");         
+68:          out.print("<tr><td>Date and Time<td><b>"+pdate+"  "+ptime+"</b></tr>");         
+69:          out.print("<tr><td>Payment Type<td><b>"+ptype+"</b></tr>");         
+70:          out.print("<tr><td>Transaction ID<td><b>"+pid+"</b></tr>");         
+
+
+An error occurred at line: [68] in the jsp file: [/paymentsuccess.jsp]
+The local variable pdate may not have been initialized
+65:          out.print("<tr><td>Egg Type<td><b>"+type+" Eggs</b></tr>");         
+66:          out.print("<tr><td>Egg Rate<td><b>₹"+rate+"0</b></tr>");         
+67:          out.print("<tr><td>Total Amount<td><b>₹"+pamount+"0</b></tr>");         
+68:          out.print("<tr><td>Date and Time<td><b>"+pdate+"  "+ptime+"</b></tr>");         
+69:          out.print("<tr><td>Payment Type<td><b>"+ptype+"</b></tr>");         
+70:          out.print("<tr><td>Transaction ID<td><b>"+pid+"</b></tr>");         
+71:          out.print("<tr><td>Payment Status<td><b>Paid</b></tr>");         
+
+
+An error occurred at line: [68] in the jsp file: [/paymentsuccess.jsp]
+The local variable ptime may not have been initialized
+65:          out.print("<tr><td>Egg Type<td><b>"+type+" Eggs</b></tr>");         
+66:          out.print("<tr><td>Egg Rate<td><b>₹"+rate+"0</b></tr>");         
+67:          out.print("<tr><td>Total Amount<td><b>₹"+pamount+"0</b></tr>");         
+68:          out.print("<tr><td>Date and Time<td><b>"+pdate+"  "+ptime+"</b></tr>");         
+69:          out.print("<tr><td>Payment Type<td><b>"+ptype+"</b></tr>");         
+70:          out.print("<tr><td>Transaction ID<td><b>"+pid+"</b></tr>");         
+71:          out.print("<tr><td>Payment Status<td><b>Paid</b></tr>");         
+
+
+An error occurred at line: [69] in the jsp file: [/paymentsuccess.jsp]
+The local variable ptype may not have been initialized
+66:          out.print("<tr><td>Egg Rate<td><b>₹"+rate+"0</b></tr>");         
+67:          out.print("<tr><td>Total Amount<td><b>₹"+pamount+"0</b></tr>");         
+68:          out.print("<tr><td>Date and Time<td><b>"+pdate+"  "+ptime+"</b></tr>");         
+69:          out.print("<tr><td>Payment Type<td><b>"+ptype+"</b></tr>");         
+70:          out.print("<tr><td>Transaction ID<td><b>"+pid+"</b></tr>");         
+71:          out.print("<tr><td>Payment Status<td><b>Paid</b></tr>");         
+72:     %>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [51] in the jsp file: [/paymentsuccess.jsp]
+The local variable type may not have been initialized
+48:          float rate;
+49:          if(rs.next())
+50:          type=rs.getString(1);
+51:          rs=st.executeQuery("select rate from egg1 where type="+type);
+52:          if(rs.next())
+53:          rate=rs.getInt(1);
+54:          long pid=(long)hs.getAttribute("pid");
+
+
+An error occurred at line: [55] in the jsp file: [/paymentsuccess.jsp]
+The local variable type may not have been initialized
+52:          if(rs.next())
+53:          rate=rs.getInt(1);
+54:          long pid=(long)hs.getAttribute("pid");
+55:          rs=st.executeQuery("select pamount,pdate,ptime,ptype from egg1 where type="+type);
+56:          String pamount,pdate,ptime,ptype;
+57:          if(rs.next())
+58:          {
+
+
+An error occurred at line: [65] in the jsp file: [/paymentsuccess.jsp]
+The local variable type may not have been initialized
+62:            ptype=rs.getString(4);
+63:          }
+64:          out.print("<tr><td>Username<td><b>"+S+"</b></tr>");         
+65:          out.print("<tr><td>Egg Type<td><b>"+type+" Eggs</b></tr>");         
+66:          out.print("<tr><td>Egg Rate<td><b>₹"+rate+"0</b></tr>");         
+67:          out.print("<tr><td>Total Amount<td><b>₹"+pamount+"0</b></tr>");         
+68:          out.print("<tr><td>Date and Time<td><b>"+pdate+"  "+ptime+"</b></tr>");         
+
+
+An error occurred at line: [66] in the jsp file: [/paymentsuccess.jsp]
+The local variable rate may not have been initialized
+63:          }
+64:          out.print("<tr><td>Username<td><b>"+S+"</b></tr>");         
+65:          out.print("<tr><td>Egg Type<td><b>"+type+" Eggs</b></tr>");         
+66:          out.print("<tr><td>Egg Rate<td><b>₹"+rate+"0</b></tr>");         
+67:          out.print("<tr><td>Total Amount<td><b>₹"+pamount+"0</b></tr>");         
+68:          out.print("<tr><td>Date and Time<td><b>"+pdate+"  "+ptime+"</b></tr>");         
+69:          out.print("<tr><td>Payment Type<td><b>"+ptype+"</b></tr>");         
+
+
+An error occurred at line: [67] in the jsp file: [/paymentsuccess.jsp]
+The local variable pamount may not have been initialized
+64:          out.print("<tr><td>Username<td><b>"+S+"</b></tr>");         
+65:          out.print("<tr><td>Egg Type<td><b>"+type+" Eggs</b></tr>");         
+66:          out.print("<tr><td>Egg Rate<td><b>₹"+rate+"0</b></tr>");         
+67:          out.print("<tr><td>Total Amount<td><b>₹"+pamount+"0</b></tr>");         
+68:          out.print("<tr><td>Date and Time<td><b>"+pdate+"  "+ptime+"</b></tr>");         
+69:          out.print("<tr><td>Payment Type<td><b>"+ptype+"</b></tr>");         
+70:          out.print("<tr><td>Transaction ID<td><b>"+pid+"</b></tr>");         
+
+
+An error occurred at line: [68] in the jsp file: [/paymentsuccess.jsp]
+The local variable pdate may not have been initialized
+65:          out.print("<tr><td>Egg Type<td><b>"+type+" Eggs</b></tr>");         
+66:          out.print("<tr><td>Egg Rate<td><b>₹"+rate+"0</b></tr>");         
+67:          out.print("<tr><td>Total Amount<td><b>₹"+pamount+"0</b></tr>");         
+68:          out.print("<tr><td>Date and Time<td><b>"+pdate+"  "+ptime+"</b></tr>");         
+69:          out.print("<tr><td>Payment Type<td><b>"+ptype+"</b></tr>");         
+70:          out.print("<tr><td>Transaction ID<td><b>"+pid+"</b></tr>");         
+71:          out.print("<tr><td>Payment Status<td><b>Paid</b></tr>");         
+
+
+An error occurred at line: [68] in the jsp file: [/paymentsuccess.jsp]
+The local variable ptime may not have been initialized
+65:          out.print("<tr><td>Egg Type<td><b>"+type+" Eggs</b></tr>");         
+66:          out.print("<tr><td>Egg Rate<td><b>₹"+rate+"0</b></tr>");         
+67:          out.print("<tr><td>Total Amount<td><b>₹"+pamount+"0</b></tr>");         
+68:          out.print("<tr><td>Date and Time<td><b>"+pdate+"  "+ptime+"</b></tr>");         
+69:          out.print("<tr><td>Payment Type<td><b>"+ptype+"</b></tr>");         
+70:          out.print("<tr><td>Transaction ID<td><b>"+pid+"</b></tr>");         
+71:          out.print("<tr><td>Payment Status<td><b>Paid</b></tr>");         
+
+
+An error occurred at line: [69] in the jsp file: [/paymentsuccess.jsp]
+The local variable ptype may not have been initialized
+66:          out.print("<tr><td>Egg Rate<td><b>₹"+rate+"0</b></tr>");         
+67:          out.print("<tr><td>Total Amount<td><b>₹"+pamount+"0</b></tr>");         
+68:          out.print("<tr><td>Date and Time<td><b>"+pdate+"  "+ptime+"</b></tr>");         
+69:          out.print("<tr><td>Payment Type<td><b>"+ptype+"</b></tr>");         
+70:          out.print("<tr><td>Transaction ID<td><b>"+pid+"</b></tr>");         
+71:          out.print("<tr><td>Payment Status<td><b>Paid</b></tr>");         
+72:     %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+11-Jun-2021 23:34:07.064 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [67] in the jsp file: [/paymentsuccess.jsp]
+The local variable pamount may not have been initialized
+64:          out.print("<tr><td>Username<td><b>"+S+"</b></tr>");         
+65:          out.print("<tr><td>Egg Type<td><b>"+type+" Eggs</b></tr>");         
+66:          out.print("<tr><td>Egg Rate<td><b>₹"+rate+"0</b></tr>");         
+67:          out.print("<tr><td>Total Amount<td><b>₹"+pamount+"0</b></tr>");         
+68:          out.print("<tr><td>Date and Time<td><b>"+pdate+"  "+ptime+"</b></tr>");         
+69:          out.print("<tr><td>Payment Type<td><b>"+ptype+"</b></tr>");         
+70:          out.print("<tr><td>Transaction ID<td><b>"+pid+"</b></tr>");         
+
+
+An error occurred at line: [68] in the jsp file: [/paymentsuccess.jsp]
+The local variable pdate may not have been initialized
+65:          out.print("<tr><td>Egg Type<td><b>"+type+" Eggs</b></tr>");         
+66:          out.print("<tr><td>Egg Rate<td><b>₹"+rate+"0</b></tr>");         
+67:          out.print("<tr><td>Total Amount<td><b>₹"+pamount+"0</b></tr>");         
+68:          out.print("<tr><td>Date and Time<td><b>"+pdate+"  "+ptime+"</b></tr>");         
+69:          out.print("<tr><td>Payment Type<td><b>"+ptype+"</b></tr>");         
+70:          out.print("<tr><td>Transaction ID<td><b>"+pid+"</b></tr>");         
+71:          out.print("<tr><td>Payment Status<td><b>Paid</b></tr>");         
+
+
+An error occurred at line: [68] in the jsp file: [/paymentsuccess.jsp]
+The local variable ptime may not have been initialized
+65:          out.print("<tr><td>Egg Type<td><b>"+type+" Eggs</b></tr>");         
+66:          out.print("<tr><td>Egg Rate<td><b>₹"+rate+"0</b></tr>");         
+67:          out.print("<tr><td>Total Amount<td><b>₹"+pamount+"0</b></tr>");         
+68:          out.print("<tr><td>Date and Time<td><b>"+pdate+"  "+ptime+"</b></tr>");         
+69:          out.print("<tr><td>Payment Type<td><b>"+ptype+"</b></tr>");         
+70:          out.print("<tr><td>Transaction ID<td><b>"+pid+"</b></tr>");         
+71:          out.print("<tr><td>Payment Status<td><b>Paid</b></tr>");         
+
+
+An error occurred at line: [69] in the jsp file: [/paymentsuccess.jsp]
+The local variable ptype may not have been initialized
+66:          out.print("<tr><td>Egg Rate<td><b>₹"+rate+"0</b></tr>");         
+67:          out.print("<tr><td>Total Amount<td><b>₹"+pamount+"0</b></tr>");         
+68:          out.print("<tr><td>Date and Time<td><b>"+pdate+"  "+ptime+"</b></tr>");         
+69:          out.print("<tr><td>Payment Type<td><b>"+ptype+"</b></tr>");         
+70:          out.print("<tr><td>Transaction ID<td><b>"+pid+"</b></tr>");         
+71:          out.print("<tr><td>Payment Status<td><b>Paid</b></tr>");         
+72:     %>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [67] in the jsp file: [/paymentsuccess.jsp]
+The local variable pamount may not have been initialized
+64:          out.print("<tr><td>Username<td><b>"+S+"</b></tr>");         
+65:          out.print("<tr><td>Egg Type<td><b>"+type+" Eggs</b></tr>");         
+66:          out.print("<tr><td>Egg Rate<td><b>₹"+rate+"0</b></tr>");         
+67:          out.print("<tr><td>Total Amount<td><b>₹"+pamount+"0</b></tr>");         
+68:          out.print("<tr><td>Date and Time<td><b>"+pdate+"  "+ptime+"</b></tr>");         
+69:          out.print("<tr><td>Payment Type<td><b>"+ptype+"</b></tr>");         
+70:          out.print("<tr><td>Transaction ID<td><b>"+pid+"</b></tr>");         
+
+
+An error occurred at line: [68] in the jsp file: [/paymentsuccess.jsp]
+The local variable pdate may not have been initialized
+65:          out.print("<tr><td>Egg Type<td><b>"+type+" Eggs</b></tr>");         
+66:          out.print("<tr><td>Egg Rate<td><b>₹"+rate+"0</b></tr>");         
+67:          out.print("<tr><td>Total Amount<td><b>₹"+pamount+"0</b></tr>");         
+68:          out.print("<tr><td>Date and Time<td><b>"+pdate+"  "+ptime+"</b></tr>");         
+69:          out.print("<tr><td>Payment Type<td><b>"+ptype+"</b></tr>");         
+70:          out.print("<tr><td>Transaction ID<td><b>"+pid+"</b></tr>");         
+71:          out.print("<tr><td>Payment Status<td><b>Paid</b></tr>");         
+
+
+An error occurred at line: [68] in the jsp file: [/paymentsuccess.jsp]
+The local variable ptime may not have been initialized
+65:          out.print("<tr><td>Egg Type<td><b>"+type+" Eggs</b></tr>");         
+66:          out.print("<tr><td>Egg Rate<td><b>₹"+rate+"0</b></tr>");         
+67:          out.print("<tr><td>Total Amount<td><b>₹"+pamount+"0</b></tr>");         
+68:          out.print("<tr><td>Date and Time<td><b>"+pdate+"  "+ptime+"</b></tr>");         
+69:          out.print("<tr><td>Payment Type<td><b>"+ptype+"</b></tr>");         
+70:          out.print("<tr><td>Transaction ID<td><b>"+pid+"</b></tr>");         
+71:          out.print("<tr><td>Payment Status<td><b>Paid</b></tr>");         
+
+
+An error occurred at line: [69] in the jsp file: [/paymentsuccess.jsp]
+The local variable ptype may not have been initialized
+66:          out.print("<tr><td>Egg Rate<td><b>₹"+rate+"0</b></tr>");         
+67:          out.print("<tr><td>Total Amount<td><b>₹"+pamount+"0</b></tr>");         
+68:          out.print("<tr><td>Date and Time<td><b>"+pdate+"  "+ptime+"</b></tr>");         
+69:          out.print("<tr><td>Payment Type<td><b>"+ptype+"</b></tr>");         
+70:          out.print("<tr><td>Transaction ID<td><b>"+pid+"</b></tr>");         
+71:          out.print("<tr><td>Payment Status<td><b>Paid</b></tr>");         
+72:     %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:482)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+11-Jun-2021 23:34:45.356 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [An exception occurred processing [/paymentsuccess.jsp] at line [46]
+
+43:          String S=(String)hs.getAttribute("user");
+44:          int oid=(int)hs.getAttribute("oid");
+45:          ResultSet rs;
+46:          rs=st.executeQuery("select otype from order where oid="+oid);
+47:          String type=null;
+48:          float rate=0;
+49:          if(rs.next())
+
+
+Stacktrace:] with root cause
+	org.postgresql.util.PSQLException: ERROR: syntax error at or near "order"
+  Position: 19
+		at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2553)
+		at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2285)
+		at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:323)
+		at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:473)
+		at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:393)
+		at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
+		at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
+		at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
+		at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:236)
+		at org.apache.jsp.paymentsuccess_jsp._jspService(paymentsuccess_jsp.java:166)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+11-Jun-2021 23:39:10.432 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [An exception occurred processing [/paymentsuccess.jsp] at line [51]
+
+48:          float rate=0;
+49:          if(rs.next())
+50:          type=rs.getString(1);
+51:          rs=st.executeQuery("select rate from egg1 where type="+type);
+52:          if(rs.next())
+53:          rate=rs.getInt(1);
+54:          long pid=(long)hs.getAttribute("pid");
+
+
+Stacktrace:] with root cause
+	org.postgresql.util.PSQLException: ERROR: column "country" does not exist
+  Position: 34
+		at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2553)
+		at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2285)
+		at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:323)
+		at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:473)
+		at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:393)
+		at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
+		at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
+		at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
+		at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:236)
+		at org.apache.jsp.paymentsuccess_jsp._jspService(paymentsuccess_jsp.java:171)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+11-Jun-2021 23:39:54.038 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/EggSupplier] threw exception [An exception occurred processing [/paymentsuccess.jsp] at line [55]
+
+52:          if(rs.next())
+53:          rate=rs.getInt(1);
+54:          long pid=(long)hs.getAttribute("pid");
+55:          rs=st.executeQuery("select pamount,pdate,ptime,ptype from egg1 where type='"+type+"'");
+56:          String pamount=null,pdate=null,ptime=null,ptype=null;
+57:          if(rs.next())
+58:          {
+
+
+Stacktrace:] with root cause
+	org.postgresql.util.PSQLException: ERROR: column "pamount" does not exist
+  Position: 8
+		at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2553)
+		at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2285)
+		at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:323)
+		at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:473)
+		at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:393)
+		at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
+		at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
+		at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
+		at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:236)
+		at org.apache.jsp.paymentsuccess_jsp._jspService(paymentsuccess_jsp.java:175)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:378)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:326)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
